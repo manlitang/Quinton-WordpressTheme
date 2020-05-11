@@ -3,31 +3,17 @@ Theme Name: Dark Matter
 Author: Manli Tang
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: helveticaNeue;
-    src: url(HelveticaNeueLt.ttf);
-}
-
-@font-face {
-    font-family: helveticaNeue;
-    src: url(HelveticaNeueMedium.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: helveticaNeue;
-    src: url(HelveticaNeueHv.ttf);
-    font-weight: bolder;
-}
-
 body {
-    font-family: helveticaNeue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: #fff;
 
     background-image: url("img/bg-img.png");
