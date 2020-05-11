@@ -7,4 +7,15 @@
     <?php wp_head();?>
 </head>
 <body <?php body_class();?>>
+
+    <div class="nav-container">
+        <nav>
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'container' => false
+                )); 
+            ?>
+        </nav>
+    </div>
     
