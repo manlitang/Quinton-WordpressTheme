@@ -2,3 +2,15 @@
 Theme Name: Dark Matter
 Author: Manli Tang
 */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("img/bg-img.png");
+    background-color: #000;
+    background-position: center;
+    background-repeat: repeat;
+}
