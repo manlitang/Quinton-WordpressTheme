@@ -32,5 +32,11 @@ function theme_register_nav_menu() {
 add_action('after_setup_theme', 'theme_register_nav_menu');
 
 # add javascript
-wp_enqueue_script('script', get_template_directory_uri() . '/script.js', array(), true);
+wp_enqueue_script('script', get_template_directory_uri() . '/scripts/script.js', array(), true);
 
+#add data text to menu-items
+add_filter( 'nav_menu_link_attributes', 'add_custom_data_atts_to_nav', 10, 4 );
+function add_custom_data_atts_to_nav( $atts, $item, $args ) {
+
+$atts['data-text'] = $item->title;
+return $atts;}
