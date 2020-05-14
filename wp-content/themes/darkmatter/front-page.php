@@ -21,28 +21,32 @@
 </section>
 
 <section class="section-centered">
-    <h1>Services</h1>
-    <h2>Entertainment shows, cooking shows, brand films, music videos, commercials.<br>As a freelance videographer, I believe there's nothing where my creativity doesn't fit to make video content watched and remembered.</h2>
+    <h1><?php the_field('services_headline'); ?></h1>
+    <h2><?php the_field('services_subheadline'); ?></h2>
     <div class="column-container"> 
+
+        <?php 
+        $service1 = get_field('service_1');
+        $service2 = get_field('service_2');
+        $service3 = get_field('service_3');
+        ?>
+
         <div class="column">
             <img src="<?php bloginfo('template_url');?>/img/icon-camera.svg" alt="video production">
-            <h1>Video production</h1>
-            <p>Camera direction</p>
-            <p>Creative perspectives</p>
+            <h1><?php echo $service1['service_name1'] ?></h1>
+            <p><?php echo $service1['service_details1'] ?></p>
         </div>
 
         <div class="column">
             <img src="<?php bloginfo('template_url');?>/img/icon-edit.svg" alt="video production">
-            <h1>Video editing</h1>
-            <p>Colour correction + grading</p>
-            <p>Audio mix</p>
+            <h1><?php echo $service2['service_name2'] ?></h1>
+            <p><?php echo $service2['service_details2'] ?></p>
         </div>
 
         <div class="column">
             <img src="<?php bloginfo('template_url');?>/img/icon-motion.svg" alt="video production">
-            <h1>Motion design</h1>
-            <p>VFX</p>
-            <p>graphics</p>
+            <h1><?php echo $service3['service_name3'] ?></h1>
+            <p><?php echo $service3['service_details3'] ?></p>
         </div>
     </div>
 </section>
