@@ -47,4 +47,9 @@
     </div>
 </section>
 
+<section class="section-centered">
+    <h1>Featured projects</h1>
+    <h2>I'm all about adding personality and humour to videos.<br>But hey, instead of telling you I'll show you. </h2>
+</section>
+
 <?php get_footer();?>
