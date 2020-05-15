@@ -4,6 +4,7 @@ Author: Manli Tang
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     margin: 0;
@@ -443,6 +444,12 @@ h2 {
     margin-left: 10px;
 }
 
+.review {
+    min-height: 200px;
+    display: flex;
+    align-items:center;
+}
+
 .main-carousel {
     width: 100%;
     margin: 0 auto;
@@ -466,6 +473,7 @@ h2 {
 .flickity-page-dots {
     width: 100%;
     margin-top: 50px;
+    text-align: center;
 }
 
 .dot {
@@ -485,6 +493,11 @@ h2 {
 @media only screen and (min-width: 768px) {
     .review {
         width: 70%;
+        margin: 0 auto;
+        min-height: 100px;
+    }
+
+    .review p {
         margin: 0 auto;
     }
 }

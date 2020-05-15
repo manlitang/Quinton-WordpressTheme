@@ -93,39 +93,115 @@
 </section>
 
 <section class="section-centered">
-    <h1>Colleagues talking</h1>
-    <h2>I could talk about myself but I figured it's more interesting to give the word to people I've worked with.</h2>
+    <h1><?php the_field('testimonials_headline'); ?></h1>
+    <h2><?php the_field('testimonials_subheadline'); ?></h2>
 
-    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": true }'>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": 8000 }'>
+        <?php 
+            $testimonial1 = get_field('testimonial1'); 
+            $testimonial_img1 = $testimonial1['testimonial_image1'];
+
+        ?>
+
         <div class="carousel-cell">
             <div class="review">
-                <p>As a camera operator Quinton is great at following camera direction but also creative enough to come up with visually appealing solutions. As an editor he creates a clear reflection of the creative plan or briefing of the client. </p>
+                <p><?php echo $testimonial1['testimonial_statement1']; ?></p>
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
+                    <img src="<?php echo $testimonial_img1['url'] ?>" alt="<?php echo $testimonial_img1['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
-                    <p>Rik Rampaart</p>
-                    <p>Slam!TV editorial</p>
+                    <p><?php echo $testimonial1['testimonial_name1']; ?></p>
+                    <p><?php echo $testimonial1['testimonial_title1']; ?></p>
                 </div>
             </div>
         </div>
 
+        <?php 
+            $testimonial2 = get_field('testimonial2'); 
+            $testimonial_img2 = $testimonial2['testimonial_image2'];
+
+        ?>
+
         <div class="carousel-cell">
             <div class="review">
-                <p>As a camera operator Quinton is great at following camera direction but also creative enough to come up with visually appealing solutions. As an editor he creates a clear reflection of the creative plan or briefing of the client. </p>
+                <p><?php echo $testimonial2['testimonial_statement2']; ?></p>
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
+                    <img src="<?php echo $testimonial_img2['url'] ?>" alt="<?php echo $testimonial_img2['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
-                    <p>Rik Rampaart</p>
-                    <p>Slam!TV editorial</p>
+                    <p><?php echo $testimonial2['testimonial_name2']; ?></p>
+                    <p><?php echo $testimonial2['testimonial_title2']; ?></p>
                 </div>
             </div>
         </div>
+
+        <?php 
+            $testimonial3 = get_field('testimonial3'); 
+            $testimonial_img3 = $testimonial3['testimonial_image3'];
+
+        ?>
+
+        <div class="carousel-cell">
+            <div class="review">
+                <p><?php echo $testimonial3['testimonial_statement3']; ?></p>
+            </div>
+            <div class="review-profile-container">
+                <div class="review-profile-pic">
+                    <img src="<?php echo $testimonial_img3['url'] ?>" alt="<?php echo $testimonial_img3['alt'] ?>">
+                </div>
+                <div class="review-profile-details">
+                    <p><?php echo $testimonial3['testimonial_name3']; ?></p>
+                    <p><?php echo $testimonial3['testimonial_title3']; ?></p>
+                </div>
+            </div>
+        </div>
+
+        <?php 
+            $testimonial4 = get_field('testimonial4'); 
+            $testimonial_img4 = $testimonial4['testimonial_image4'];
+
+        ?>
+
+        <div class="carousel-cell">
+            <div class="review">
+                <p><?php echo $testimonial4['testimonial_statement4']; ?></p>
+            </div>
+            <div class="review-profile-container">
+                <div class="review-profile-pic">
+                    <img src="<?php echo $testimonial_img4['url'] ?>" alt="<?php echo $testimonial_img4['alt'] ?>">
+                </div>
+                <div class="review-profile-details">
+                    <p><?php echo $testimonial4['testimonial_name4']; ?></p>
+                    <p><?php echo $testimonial4['testimonial_title4']; ?></p>
+                </div>
+            </div>
+        </div>
+
+        <?php 
+            $testimonial5 = get_field('testimonial5'); 
+            $testimonial_img5 = $testimonial5['testimonial_image5'];
+
+        ?>
+
+        <div class="carousel-cell">
+            <div class="review">
+                <p><?php echo $testimonial5['testimonial_statement5']; ?></p>
+            </div>
+            <div class="review-profile-container">
+                <div class="review-profile-pic">
+                    <img src="<?php echo $testimonial_img5['url'] ?>" alt="<?php echo $testimonial_img5['alt'] ?>">
+                </div>
+                <div class="review-profile-details">
+                    <p><?php echo $testimonial5['testimonial_name5']; ?></p>
+                    <p><?php echo $testimonial5['testimonial_title5']; ?></p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
