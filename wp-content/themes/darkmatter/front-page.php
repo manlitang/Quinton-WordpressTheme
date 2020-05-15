@@ -84,7 +84,7 @@
             <a href="<?php echo $featured2['featured_link2']; ?>"><img src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>"></a>
         </div>
 
-        <div class="btn-container">
+        <div class="btn-container btn-container--padding-bottom">
             <a href="#" class="btn">View projects</a>
         </div>
 
@@ -203,6 +203,27 @@
         </div>
 
     </div>
+</section>
+
+<section class="section-centered">
+    <h1>Ready to get started?</h1>
+    <h2>Let's talk about you and how I can be of help.</h2>
+
+    <div class="two-btns-container">
+        <div class="btn-container">
+            <a href="#" class="btn">View projects</a>
+        </div>
+
+        <div class="btn-mobile-seperator">
+        <p>Or</p>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn">Contact me</a>
+        </div>
+    </div>
+
+    <div class="bg-transparent"></div>
 </section>
 
 <?php get_footer();?>

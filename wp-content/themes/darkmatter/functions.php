@@ -28,6 +28,7 @@ add_filter('the_generator', 'remove_meta_version');
 # activate menu
 function theme_register_nav_menu() {
     register_nav_menu('primary', 'Header Navigation Menu');
+    register_nav_menu('footer', 'Footer Navigation Menu');
 }
 add_action('after_setup_theme', 'theme_register_nav_menu');
 
