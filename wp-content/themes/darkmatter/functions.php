@@ -1,6 +1,6 @@
 <?php
 
-# load stylesheets
+# load stylesheet
 function load_stylesheets() {
     wp_register_style('stylesheet', get_template_directory_uri() . '/style.css',
         array(), false, 'all');
@@ -40,3 +40,10 @@ function add_custom_data_atts_to_nav( $atts, $item, $args ) {
 
 $atts['data-text'] = $item->title;
 return $atts;}
+
+#load flickity plugin
+function load_flickity() {
+    wp_register_style( 'flickity_css', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );
+    wp_enqueue_script( 'flickity_js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'load_flickity' );

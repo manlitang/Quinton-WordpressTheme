@@ -23,6 +23,8 @@ body {
     background-color: #000;
     background-position: center;
     background-repeat: repeat;
+
+    overflow-x: hidden;
 }
 
 main {
@@ -442,7 +444,47 @@ h2 {
 }
 
 .main-carousel {
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
+    position: relative;
+}
+
+.main-carousel:focus { 
+    outline: none; 
+}
+
+.carousel-cell {
+    width: 100%;
+    opacity: 0;
+}
+
+.carousel-cell.is-selected {
+    opacity: 1;
+}
+
+.flickity-page-dots {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.dot {
+    height: 4px;
+    width: 30px;
+    border-radius: 0;
+    border: 1px solid #fff;
+    list-style: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+.dot.is-selected {
+    background: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .review {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
