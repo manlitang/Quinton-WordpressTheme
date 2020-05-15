@@ -92,4 +92,24 @@
     </div>
 </section>
 
+<section class="section-centered">
+<h1>Colleagues talking</h1>
+<h2>I could talk about myself but I figured it's more interesting to give the word to people I've worked with.</h2>
+
+<div class="main-carousel">
+    <div class="carousel-cell">
+        <p>As a camera operator Quinton is great at following camera direction but also creative enough to come up with visually appealing solutions. As an editor he creates a clear reflection of the creative plan or briefing of the client. </p>
+
+        <div class="review-profile-container">
+            <div class="review-profile-pic">
+                <img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
+            </div>
+            <div class="review-profile-details">
+                <p>Rik Rampaart</p>
+                <p>Slam!TV editorial</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php get_footer();?>

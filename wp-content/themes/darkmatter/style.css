@@ -417,3 +417,32 @@ h2 {
         padding-bottom: 120px;
     }
 }
+
+/* =============================================================================
+   COLLEAGUES TALKING STYLING
+   ============================================================================= */
+
+.review-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.review-profile-pic img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-profile-details {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.main-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
