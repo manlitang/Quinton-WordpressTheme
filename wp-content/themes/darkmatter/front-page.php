@@ -52,8 +52,44 @@
 </section>
 
 <section class="section-centered">
-    <h1>Featured projects</h1>
-    <h2>I'm all about adding personality and humour to videos.<br>But hey, instead of telling you I'll show you. </h2>
+    <h1><?php the_field('featured_headline'); ?></h1>
+    <h2><?php the_field('featured_subheadline'); ?></h2>
+
+    <?php 
+        $featured1 = get_field('featured_project1');
+        $featured2 = get_field('featured_project2');
+    ?>
+
+    <div class="projects-container">
+
+        <?php 
+            $featured1 = get_field('featured_project1'); 
+            $featured_img1 = $featured1['featured_image1'];
+            $url1 = $featured_img1['url'];
+            $alt1 = $featured_img1['alt'];
+        ?>
+
+        <div class="project-image-container">
+            <a href="<?php echo $featured1['featured_link1']; ?>"><img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>"></a>
+        </div>
+
+        <?php 
+            $featured2 = get_field('featured_project2'); 
+            $featured_img2 = $featured2['featured_image2'];
+            $url2 = $featured_img2['url'];
+            $alt2 = $featured_img2['alt'];
+        ?>
+        
+        <div class="project-image-container">
+            <a href="<?php echo $featured2['featured_link2']; ?>"><img src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>"></a>
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn">View projects</a>
+        </div>
+
+        <div class="bg-overlap"></div>
+    </div>
 </section>
 
 <?php get_footer();?>
