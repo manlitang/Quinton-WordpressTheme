@@ -51,7 +51,7 @@
     </div>
 </section>
 
-<section class="section-centered">
+<section class="section-centered section-centered--no-padding-bottom">
     <h1><?php the_field('featured_headline'); ?></h1>
     <h2><?php the_field('featured_subheadline'); ?></h2>
 
@@ -92,7 +92,7 @@
     </div>
 </section>
 
-<section class="section-centered">
+<section class="section-centered section-centered--extra-padding">
     <h1><?php the_field('testimonials_headline'); ?></h1>
     <h2><?php the_field('testimonials_subheadline'); ?></h2>
 
@@ -205,7 +205,7 @@
     </div>
 </section>
 
-<section class="section-centered">
+<section class="section-centered section-centered--extra-padding">
     <h1>Ready to get started?</h1>
     <h2>Let's talk about you and how I can be of help.</h2>
 

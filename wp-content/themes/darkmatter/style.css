@@ -299,13 +299,17 @@ nav {
     text-align: left;
 }
 
+.section-centered--no-padding-bottom {
+    padding-bottom: 0;
+}
+
 h2 {
     font-size: 18px;
     font-weight: 300;
 }
 
 .column-container {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .column h1 {
@@ -505,6 +509,10 @@ h2 {
     .review p {
         margin: 0 auto;
     }
+}
+
+.section-centered--extra-padding {
+    padding: 15% 0;
 }
 
 /* =============================================================================
