@@ -528,6 +528,30 @@ h2 {
     padding: 15% 0;
 }
 
+.main-carousel {
+    position: relative;
+}
+
+.main-carousel::before {
+    content: '"';
+    font-family: 'Lobster', cursive;
+    font-size: 500px;
+    line-height: 1;
+
+    position: absolute;
+    top: -80px;
+    left: -30vw;
+    opacity: 0.1;
+    z-index: -20;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-carousel::before {
+        left: 5vw;
+        top: -25%;
+    }
+}
+
 /* =============================================================================
    CTA FOOTER STYLING
    ============================================================================= */
