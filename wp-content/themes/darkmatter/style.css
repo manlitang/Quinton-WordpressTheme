@@ -77,10 +77,6 @@ nav {
     justify-content: space-between;
     max-width: 1150px;
     width: calc(100vw - 3em);
-    
-    /*padding: 20px 0px;
-    padding-left: calc(20px + (200 - 20) * ((100vw - 768px) / (1600 - 768)));
-    padding-right: calc(20px + (200 - 20) * ((100vw - 768px) / (1600 - 768)));*/
     margin: 0 auto;
     align-items: center;
     min-height: 70px;
@@ -368,10 +364,27 @@ h2 {
 .project-image-container {
     margin: 0 auto;
     border-bottom: 50px solid transparent;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .project-image-container, .project-image-container img {
     width: 100%;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateZ(30px)
+        translateX(-50%)
+        translateY(-50%);
+}
+
+.logo-overlay img {
+    height: 130px;
+    width: auto;
 }
 
 .btn-container {

@@ -67,10 +67,18 @@
             $featured_img1 = $featured1['featured_image1'];
             $url1 = $featured_img1['url'];
             $alt1 = $featured_img1['alt'];
+
+            $logo_img1 = $featured1['featured_logo1'];
+
         ?>
 
-        <div class="project-image-container">
-            <a href="<?php echo $featured1['featured_link1']; ?>"><img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>"></a>
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="100" data-tilt-reverse="true">
+            <a href="<?php echo $featured1['featured_link1']; ?>">
+            <img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
+                <div class="logo-overlay">
+                    <img src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
+                </div>
+            </a>
         </div>
 
         <?php 
@@ -78,10 +86,18 @@
             $featured_img2 = $featured2['featured_image2'];
             $url2 = $featured_img2['url'];
             $alt2 = $featured_img2['alt'];
+
+            $logo_img2 = $featured2['featured_logo2'];
+
         ?>
-        
-        <div class="project-image-container">
-            <a href="<?php echo $featured2['featured_link2']; ?>"><img src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>"></a>
+
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="200" data-tilt-reverse="true">
+            <a href="<?php echo $featured2['featured_link2']; ?>">
+            <img src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>">
+                <div class="logo-overlay">
+                    <img src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
+                </div>
+            </a>
         </div>
 
         <div class="btn-container btn-container--padding-bottom">

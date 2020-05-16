@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     navSlide();
+    initVanillaTilt();
 });
 
 const navSlide = () => {
@@ -25,4 +26,11 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
 
     });
+}
+    
+const initVanillaTilt = () => {
+    VanillaTilt.init(document.querySelector('.project-image-container'), {
+        max: 35,
+        speed: 400
+    }); 
 }
