@@ -34,6 +34,7 @@ add_action('after_setup_theme', 'theme_register_nav_menu');
 
 # add javascript
 wp_enqueue_script('vanilla-tilt', get_template_directory_uri() . '/scripts/vanilla-tilt.min.js', array('jquery'), null, true);
+wp_enqueue_script('rellax', get_template_directory_uri() . '/scripts/rellax.min.js', array(), true);
 wp_enqueue_script('script', get_template_directory_uri() . '/scripts/script.js', array(), true);
 
 #add data text to menu-items

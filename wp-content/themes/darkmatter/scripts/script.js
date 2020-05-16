@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     navSlide();
     initVanillaTilt();
+    initRellax();
 });
 
 const navSlide = () => {
@@ -33,4 +34,15 @@ const initVanillaTilt = () => {
         max: 35,
         speed: 400
     }); 
+}
+
+const initRellax = () => {
+    var rellax = new Rellax('.rellax', {
+        speed: -2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+    });
 }
