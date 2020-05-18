@@ -20,7 +20,7 @@ body {
 
     width: 100%;
 
-    background-image: url("img/bg-img.png");
+    background-image: url('img/bg-img.png');
     background-color: #000;
     background-position: center;
     background-repeat: repeat;
@@ -50,6 +50,7 @@ h2, p {
 
 h1 {
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 section h1 {
@@ -60,6 +61,11 @@ section h1 {
     h1 {
         font-size: 68px;
     }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* =============================================================================
@@ -750,3 +756,88 @@ footer, footer h1, footer h2 {
         opacity: 1;
     }
 }
+
+/* =============================================================================
+   SINGLE PAGE HEADER STYLING
+   ============================================================================= */
+
+.text-header-container {
+    margin-top: calc(100px + (250 - 100) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: calc(50px + (100 - 100) * ((50vw - 300px) / (1600 - 300)));
+    position: relative;
+}
+
+.text-header-shadow {
+    opacity: 0.1;
+    position: relative;
+    margin-top: -70px;
+    font-size: calc(68px + (106.28 - 68) * ((100vw - 300px) / (1600 - 300)));
+    user-select: none;
+}
+
+/* =============================================================================
+   PROJECT INTRO STYLING
+   ============================================================================= */
+
+.cta-container {
+    display: flex;
+    align-items: center;
+}
+
+.down-arrow-icon {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.projects-intro-grid-container ul {
+    list-style: none;
+}
+
+.list-channels {
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+    .projects-intro-grid-container {
+        display: grid;
+        grid-template-columns: 2.5fr max-content max-content;
+        grid-template-areas:
+            "intro list1 list2";
+    }
+
+    .projects-intro-grid-container ul:nth-child(1) { grid-area: intro }
+    .projects-intro-grid-container ul:nth-child(2) { grid-area: list1 }
+    .projects-intro-grid-container ul:nth-child(3) { grid-area: list2 }
+
+    .projects-intro-grid-container ul:nth-child(1) {
+        margin-right: 150px;
+    }
+
+    .projects-intro-grid-container ul:nth-child(2) {
+        margin-right: 100px;
+    }
+
+    .list-channels {
+        margin-top: 0px;
+    }
+}
+
+.list-channels li, .list-industries li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.list-channels li::before, .list-industries li::before {
+    margin-right: 10px;
+    transform: scale(.8);
+}
+
+.list-channels li:nth-child(1)::before { content: url('img/industry-icons/youtube.svg'); }
+.list-channels li:nth-child(2)::before { content: url('img/industry-icons/tv.svg'); }
+.list-channels li:nth-child(3)::before { content: url('img/industry-icons/socials.svg'); }
+
+.list-industries li:nth-child(1)::before { content: url('img/industry-icons/entertainment.svg'); }
+.list-industries li:nth-child(2)::before { content: url('img/industry-icons/music.svg'); }
+.list-industries li:nth-child(3)::before { content: url('img/industry-icons/food.svg'); }
+.list-industries li:nth-child(4)::before { content: url('img/industry-icons/corporate.svg'); }
