@@ -13,14 +13,21 @@
     <div class="hero__text">
         <h1><?php the_field('hero_headline'); ?></h1>
 
-        <div class="hero__text-cta">
+        <div class="hero__text-cta" id="hero__text-cta">
             <div class="play-btn"><?php the_field('hero_icon'); ?></div>
             <p><?php the_field('hero_cta'); ?></p>
         </div>
     </div>
 </section>
 
-<section class="section-centered">
+<div class="showreel-modal" id="showreel-modal">
+    <span class="close-modal" id="close-modal">&times;</span>
+    <div class="embed-container">
+        <iframe width="1174" height="660" src="https://www.youtube.com/embed/aJs7eHyKuec?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<section class="section-centered" data-aos="fade-up">
     <h1><?php the_field('services_headline'); ?></h1>
     <h2><?php the_field('services_subheadline'); ?></h2>
     <div class="column-container"> 
@@ -111,7 +118,6 @@
 <section class="section-centered section-centered--extra-padding">
     <h1><?php the_field('testimonials_headline'); ?></h1>
     <h2><?php the_field('testimonials_subheadline'); ?></h2>
-
     <div class="main-carousel" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": 8000 }'>
         <?php 
             $testimonial1 = get_field('testimonial1'); 

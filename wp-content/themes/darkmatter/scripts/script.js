@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     navSlide();
     initVanillaTilt();
     initRellax();
+    openModal();
+    closeModal();
 });
 
 const navSlide = () => {
@@ -27,6 +29,38 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
 
     });
+}
+
+if (window.innerWidth >= 768) {
+    var prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector('.nav-container').style.top = "0";
+        } else {
+            document.querySelector('.nav-container').style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+}
+
+const openModal = () => {
+    var modal = document.getElementById('showreel-modal');
+
+    var play = document.getElementById('hero__text-cta');
+    play.onclick = function(){
+    modal.style.display = 'block';
+    }
+}
+
+const closeModal = () => {
+    var modal = document.getElementById('showreel-modal');
+    var span = document.getElementById('close-modal');
+
+    span.onclick = function() { 
+    modal.style.display = 'none';
+    }
 }
     
 const initVanillaTilt = () => {

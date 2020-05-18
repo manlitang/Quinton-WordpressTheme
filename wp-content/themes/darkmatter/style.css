@@ -16,7 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
-    font-size: 18px;
+    font-size: 22.28px;
 
     width: 100%;
 
@@ -69,9 +69,19 @@ section h1 {
 .nav-container {
     display: flex;
     justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background: #111111;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 20;
+    transition: top 0.3s;
 }
 
 nav {
+    background: #111111;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -80,7 +90,6 @@ nav {
     margin: 0 auto;
     align-items: center;
     min-height: 70px;
-    z-index: 10;
 }   
 
 .logo {
@@ -178,6 +187,31 @@ nav {
     .menu-item {
         opacity: 0;
     }
+
+    .menu-item a:hover::before {
+        visibility: hidden;
+    }
+
+    .menu-item a::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6em;
+        font-weight: 900;
+        pointer-events: none;
+        opacity: 0;
+        letter-spacing: 20px;
+        transition: 0.5s;
+        white-space: nowrap;
+    }
+
+    .menu-item a:hover::after {
+        opacity: 0.1;
+        letter-spacing: 0px;
+    }
+
 }
 
 /* =============================================================================
@@ -287,6 +321,57 @@ nav {
     }
 }
 
+
+/* =============================================================================
+   NAVIGATION STYLING
+   ============================================================================= */
+
+.showreel-modal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-top: 56.25%;
+    height: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    .embed-container {
+        margin-top: 0;
+    }
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    z-index: 30;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+}
+
 /* =============================================================================
    SECTION WITHIN GRID AND CONTENT CENTERED
    ============================================================================= */
@@ -300,7 +385,7 @@ nav {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 22.28px;
     font-weight: 300;
 }
 
@@ -309,7 +394,7 @@ h2 {
 }
 
 .column h1 {
-    font-size: 18px;
+    font-size: 22.28px;
     margin: 20px 0px 10px 0px;
 }
 
@@ -335,7 +420,7 @@ h2 {
 
     .section-centered h2 {
         font-weight: 500;
-        max-width: 700px;
+        max-width: 830px;
         margin: 0 auto;
     }
 }
@@ -383,8 +468,14 @@ h2 {
 }
 
 .logo-overlay img {
-    height: 130px;
+    height: 80px;
     width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .logo-overlay img {
+        height: 130px;
+    }
 }
 
 .btn-container {
@@ -398,7 +489,7 @@ h2 {
 }
 
 .btn {
-    width: 180px;
+    width: 210px;
     border: 2px solid #fff;
     border-radius: 5px;
     padding: 15px 25px;
@@ -410,7 +501,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 17.83px;
 }
 
 .btn:hover {
@@ -462,6 +553,10 @@ h2 {
 .review-profile-details {
     text-align: left;
     margin-left: 10px;
+}
+
+.review-profile-details p:nth-child(2) {
+    font-size: 14.26px;
 }
 
 .review {
@@ -612,7 +707,7 @@ footer {
 }
 
 footer, footer h1, footer h2 {
-    font-size: 18px;
+    font-size: 22.28px;
 }
 
 .footer-content > .menu {
@@ -634,6 +729,10 @@ footer, footer h1, footer h2 {
 
     .footer-content {
         width: calc(100vw - 3em);
+    }
+
+    .footer-content p, .footer-content .menu {
+        font-size: 17.83px;
     }
 
     .footer-content .menu {
