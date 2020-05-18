@@ -10,7 +10,7 @@
                 ?>" type="video/mp4">
         </video>
     </div>
-    <div class="hero__text">
+    <div class="hero__text rellax" data-rellax-speed="-2">
         <h1><?php the_field('hero_headline'); ?></h1>
 
         <div class="hero__text-cta" id="hero__text-cta">
@@ -118,11 +118,10 @@
 <section class="section-centered section-centered--extra-padding">
     <h1><?php the_field('testimonials_headline'); ?></h1>
     <h2><?php the_field('testimonials_subheadline'); ?></h2>
-    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": 8000 }'>
+    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": false }'>
         <?php 
             $testimonial1 = get_field('testimonial1'); 
             $testimonial_img1 = $testimonial1['testimonial_image1'];
-
         ?>
 
         <div class="carousel-cell">
@@ -143,7 +142,6 @@
         <?php 
             $testimonial2 = get_field('testimonial2'); 
             $testimonial_img2 = $testimonial2['testimonial_image2'];
-
         ?>
 
         <div class="carousel-cell">
@@ -164,7 +162,6 @@
         <?php 
             $testimonial3 = get_field('testimonial3'); 
             $testimonial_img3 = $testimonial3['testimonial_image3'];
-
         ?>
 
         <div class="carousel-cell">
@@ -185,7 +182,6 @@
         <?php 
             $testimonial4 = get_field('testimonial4'); 
             $testimonial_img4 = $testimonial4['testimonial_image4'];
-
         ?>
 
         <div class="carousel-cell">
@@ -206,7 +202,6 @@
         <?php 
             $testimonial5 = get_field('testimonial5'); 
             $testimonial_img5 = $testimonial5['testimonial_image5'];
-
         ?>
 
         <div class="carousel-cell">
@@ -228,12 +223,18 @@
 </section>
 
 <section class="section-centered section-centered--extra-padding">
-    <h1>Ready to get started?</h1>
-    <h2>Let's talk about you and how I can be of help.</h2>
+    <h1><?php the_field('footer_headline'); ?></h1>
+    <h2><?php the_field('footer_subheadline'); ?></h2>
 
     <div class="two-btns-container">
+
+        <?php 
+            $button1 = get_field('button1'); 
+            $button2 = get_field('button2'); 
+        ?>
+
         <div class="btn-container">
-            <a href="#" class="btn">View projects</a>
+            <a href="<?php echo $button1['button_link1']; ?>" class="btn"><?php echo $button1['button_text1']; ?></a>
         </div>
 
         <div class="btn-mobile-seperator">
@@ -241,7 +242,7 @@
         </div>
 
         <div class="btn-container">
-            <a href="#" class="btn">Contact me</a>
+            <a href="<?php echo $button2['button_link2']; ?>" class="btn"><?php echo $button2['button_text2']; ?></a>
         </div>
     </div>
 
