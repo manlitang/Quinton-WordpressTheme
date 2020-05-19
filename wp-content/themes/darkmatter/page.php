@@ -6,7 +6,23 @@
 </div>
 
 <?php
-if (is_page( 'projects' )) {
+if (is_page('contact')) {
+?>
+<p><?php the_field('page_text'); ?></p>
+
+<section>
+<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+    <?php the_content(); ?>
+<?php endwhile; endif; ?>
+</section>
+
+<?php }
+?>
+
+<!-- PROJECT PAGE -->
+
+<?php
+if (is_page('projects')) {
 ?>
 <div class="projects-intro-grid-container">
     <ul>
@@ -124,7 +140,51 @@ if (is_page( 'projects' )) {
         <div class="bg-overlap"></div>
     </div>
 </section>
+
+<section class="client-container">
+    <h1>Clients</h1>
+    <div class="client-logo-container">
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/24k.png" alt="">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/ziggo.png" alt="">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/unilever.png" alt="">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/slam.png" alt="">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/opel.png" alt="">
+        </div>
+    </div>
+</section>
 <?php }
+?>
+
+<!-- FOOTER CTA FOR PROJECTS AND ABOUT PAGE -->
+
+<?php
+if (is_page(array('projects', 'about'))) {
+?>
+<section class="section-centered section-centered--extra-padding">
+    <h1><?php the_field('footer_headline'); ?></h1>
+    <h2><?php the_field('footer_subheadline'); ?></h2>
+
+    <div class="btn-container">
+
+        <?php 
+            $button1 = get_field('button1'); 
+        ?>
+
+        <a href="<?php echo $button1['button_link1']; ?>" class="btn"><?php echo $button1['button_text1']; ?></a>
+    </div>
+
+    <div class="bg-transparent"></div>
+</section>
+<?php } 
 ?>
 
 <?php get_footer();?>
