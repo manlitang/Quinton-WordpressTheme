@@ -47,6 +47,7 @@ return $atts;}
 #load flickity plugin
 function load_flickity() {
     wp_register_style( 'flickity_css', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );
-    wp_enqueue_script( 'flickity_js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'flickity_js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'load_flickity' );
+

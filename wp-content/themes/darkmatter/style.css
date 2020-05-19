@@ -35,7 +35,7 @@ body {
 
 main {
     max-width: 1150px;
-    width: calc(100vw - 3em);
+    width: calc(100vw - 2em);
     margin: 0 auto;
 }
 
@@ -97,7 +97,7 @@ nav {
     display: flex;
     justify-content: space-between;
     max-width: 1150px;
-    width: calc(100vw - 3em);
+    width: calc(100vw - 2em);
     margin: 0 auto;
     align-items: center;
     min-height: 70px;
@@ -201,6 +201,7 @@ nav > .menu > .menu-item a:hover::before,
         justify-content: space-around;
         transform: translateX(110%);
         transition: transform 0.5s ease-in;
+        text-transform: uppercase;
     }
 
     .menu-item {
@@ -305,10 +306,6 @@ nav > .menu > .menu-item a:hover::before,
         width: 100%;
         height: 100vh;
         padding: 0;
-        
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;*/
 
         display: grid;
         grid-template-columns: 2fr 2fr 6fr;
@@ -403,6 +400,12 @@ nav > .menu > .menu-item a:hover::before,
     padding-bottom: 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .section-mobile-centered {
+        text-align: center;
+    }
+}
+
 h2 {
     font-size: 22.28px;
     font-weight: 300;
@@ -477,10 +480,6 @@ h2 {
     width: 100%;
 }
 
-.projects-container div:nth-child(4) {
-    border-bottom: 100px solid transparent;
-}
-
 .logo-overlay {
     position: absolute;
     top: 50%;
@@ -508,7 +507,7 @@ h2 {
 }
 
 .btn-container--padding-bottom {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .btn {
@@ -541,6 +540,10 @@ h2 {
         width: 100%;
     }
 
+    .btn-container {
+        padding-top: 50px;
+    }
+
     .project-image-container {
         width: 48%;
         margin: 0;
@@ -548,10 +551,6 @@ h2 {
 
     .bg-overlap {
         height: 75%;
-    }
-
-    .btn-container {
-        padding-top: 50px;
     }
 
     .projects-container div.project-image-container:nth-child(3),
@@ -706,6 +705,10 @@ h2 {
     right: 0;
 }
 
+.one-btn-container {
+    padding-top: 50px;
+}
+
 @media only screen and (min-width: 768px) {
     .two-btns-container {
         flex-direction: row;
@@ -715,6 +718,10 @@ h2 {
 
     .btn-mobile-seperator {
         display: none;
+    }
+
+    .one-btn-container {
+        padding-top: 0px;
     }
 }
 
@@ -748,6 +755,10 @@ footer, footer h1, footer h2 {
     font-weight: 300;
 }
 
+.copyright{
+    font-size: 17.83px;
+}
+
 @media screen and (max-width: 768px) {
     footer {
         padding-left: 0;
@@ -755,7 +766,7 @@ footer, footer h1, footer h2 {
     }    
 
     .footer-content {
-        width: calc(100vw - 3em);
+        width: calc(100vw - 2em);
     }
 
     .footer-content p, .footer-content .menu {
@@ -766,11 +777,12 @@ footer, footer h1, footer h2 {
         position: static;
         transform: translateX(0%);
         background: none;
-        height: auto;
         flex-direction: row;
         max-width: 100vw;
         width: 100vw;
         margin: 0 calc(-50vw + 50%);
+        height: 200px;
+        flex-wrap: wrap;
     }
 
     .footer-content .menu-item {
@@ -890,6 +902,15 @@ footer, footer h1, footer h2 {
     margin: 20px;
 }
 
+/* =============================================================================
+   CONTACT FORM STYLING
+   ============================================================================= */
+
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
     .wpforms-field-container div:nth-child(1),
     .wpforms-field-container div:nth-child(2) {
@@ -903,6 +924,10 @@ footer, footer h1, footer h2 {
 
     form {
         width: 60%;
+    }
+
+    .wpforms-submit-container {
+        justify-content: start;
     }
 }
 
@@ -920,7 +945,6 @@ button {
     border: 2px solid #fff !important;
     border-radius: 5px !important;
     padding: 15px 25px !important;
-    margin: 0 auto;
     transition: 0.3s !important;
     cursor: pointer !important;
     text-decoration: none !important;
@@ -937,4 +961,42 @@ button:hover {
     background: #fff !important;
     color: #111111 !important;
     letter-spacing: 1px !important;
+}
+
+/* =============================================================================
+   ABOUT PAGE STYLING
+   ============================================================================= */
+
+.banner-photo img, .profile-photo img  {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-photo img {
+    height: 30vh;
+}
+
+.profile-photo{
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+    .profile-container div {
+        display: inline-block;
+        width: 43%;
+    }
+
+    .profile-container div:nth-child(1) { 
+        float: right; 
+    }
+
+    .profile-photo{
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+
+    .banner-photo img {
+        height: 100%;
+    }
 }

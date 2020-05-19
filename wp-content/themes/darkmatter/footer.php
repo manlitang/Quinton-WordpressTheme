@@ -11,7 +11,7 @@
             )); 
         ?>
 
-        <p>Copyright © 2020 Quinton Dallie</p>
+        <p class="copyright">Copyright © 2020 Quinton Dallie</p>
     </div>
 </footer>
 <?php wp_footer();?>

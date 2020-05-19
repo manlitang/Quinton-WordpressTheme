@@ -222,7 +222,7 @@
     </div>
 </section>
 
-<section class="section-centered section-centered--extra-padding">
+<section class="section-centered section-centered--extra-padding section-mobile-centered">
     <h1><?php the_field('footer_headline'); ?></h1>
     <h2><?php the_field('footer_subheadline'); ?></h2>
 

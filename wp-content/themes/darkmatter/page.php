@@ -164,27 +164,90 @@ if (is_page('projects')) {
 <?php }
 ?>
 
+<!-- PROJECT PAGE -->
+<?php
+if (is_page('about')) {
+?>
+
+<?php 
+    $banner_photo = get_field('banner_photo');
+?>
+<section>
+    <div class="banner-photo">
+        <img src="<?php echo $banner_photo['url'] ?>" alt="<?php echo $banner_photo['alt'] ?>">
+    </div>
+</section>
+
+
+<?php 
+    $usp1 = get_field('usp_1');
+    $usp2 = get_field('usp_2');
+    $usp3 = get_field('usp_3');
+?>
+
+<div class="column-container"> 
+    <div class="column">
+            <img src="<?php bloginfo('template_url');?>/img/usp-icons/a.svg" alt="video production">
+            <h1><?php echo $usp1['usp_name'] ?></h1>
+            <p><?php echo $usp1['usp_details'] ?></p>
+        </div>
+
+        <div class="column">
+            <img src="<?php bloginfo('template_url');?>/img/usp-icons/c.svg" alt="video production">
+            <h1><?php echo $usp2['usp_name'] ?></h1>
+            <p><?php echo $usp2['usp_details'] ?></p>
+        </div>
+
+        <div class="column">
+            <img src="<?php bloginfo('template_url');?>/img/usp-icons/b.svg" alt="video production">
+            <h1><?php echo $usp3['usp_name'] ?></h1>
+            <p><?php echo $usp3['usp_details'] ?></p>
+        </div>
+    </div>
+</div>
+
+<section class="profile-container section-centered--extra-padding">
+    <div class="profile-photo">
+        <?php 
+            $profile_photo = get_field('profile_photo');
+        ?>
+
+        <img src="<?php echo $profile_photo['url'] ?>" alt="<?php echo $profile_photo['alt'] ?>">
+    </div>
+
+    <div class="profile-description">
+        <h1><?php the_field('headline'); ?></h1>
+        <p><?php the_field('description'); ?></p>
+    </div>
+</section>
+<?php }
+?>
+
+
 <!-- FOOTER CTA FOR PROJECTS AND ABOUT PAGE -->
 
 <?php
 if (is_page(array('projects', 'about'))) {
 ?>
-<section class="section-centered section-centered--extra-padding">
+<section class="section-centered section-centered--extra-padding section-mobile-centered">
     <h1><?php the_field('footer_headline'); ?></h1>
     <h2><?php the_field('footer_subheadline'); ?></h2>
 
-    <div class="btn-container">
+    <div class="one-btn-container">
+        <div class="btn-container">
 
-        <?php 
-            $button1 = get_field('button1'); 
-        ?>
+            <?php 
+                $button1 = get_field('button1'); 
+            ?>
 
-        <a href="<?php echo $button1['button_link1']; ?>" class="btn"><?php echo $button1['button_text1']; ?></a>
+            <a href="<?php echo $button1['button_link1']; ?>" class="btn"><?php echo $button1['button_text1']; ?></a>
+        </div>
     </div>
 
     <div class="bg-transparent"></div>
 </section>
 <?php } 
 ?>
+
 
 <?php get_footer();?>
