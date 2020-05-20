@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <section class="hero-container">
-    <div class="video-container">
+    <div class="video-container rellax" data-rellax-xs-speed="-3">
         <video autoplay muted loop>
             <source src="<?php 
                     $bg_vid = get_field('hero_video'); 
@@ -10,7 +10,7 @@
                 ?>" type="video/mp4">
         </video>
     </div>
-    <div class="hero__text rellax" data-rellax-speed="-2">
+    <div class="hero__text rellax" data-rellax-speed="-2" data-rellax-xs-speed="0">
         <h1><?php the_field('hero_headline'); ?></h1>
 
         <div class="hero__text-cta" id="hero__text-cta">

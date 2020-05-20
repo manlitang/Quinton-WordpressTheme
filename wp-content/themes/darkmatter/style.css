@@ -184,10 +184,6 @@ nav > .menu > .menu-item a:hover::before,
         display: block;
     }
 
-    nav {
-        min-height: 10vh;
-    }
-
     .menu {
         position: absolute;
         right: 0px;
@@ -295,6 +291,20 @@ nav > .menu > .menu-item a:hover::before,
 
 .hero-container video {
     width: 100%;
+    object-fit: cover;
+    object-position: 70% 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container video {
+        height: 50vh;
+    }
+}
+
+@media screen (max-width: 768px) and (min-height: 800px) {
+    .hero-container video {
+        height: 70vh;
+    }
 }
 
 .hero__text-cta p {
@@ -421,7 +431,7 @@ h2 {
 }
 
 .column {
-    padding: 30px 0px;
+    padding: 30px 10px;
     text-align: center;
 }
 
@@ -557,6 +567,10 @@ h2 {
     .projects-container div.project-image-container:nth-child(4) {
         border-bottom: 150px solid transparent;
     }
+
+    .btn-container--padding-bottom {
+        padding-bottom: 80px;
+    }
 }
 
 /* =============================================================================
@@ -682,6 +696,7 @@ h2 {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    margin: 0 auto;
     margin-top: 50px;
 }
 
@@ -787,6 +802,7 @@ footer, footer h1, footer h2 {
 
     .footer-content .menu-item {
         opacity: 1;
+        padding: 10px;
     }
 }
 
@@ -931,9 +947,20 @@ footer, footer h1, footer h2 {
     }
 }
 
-input[type=text], textarea, label {
+input[type=text], input[type=email], textarea, label {
     font-family: 'Roboto', sans-serif;
     font-weight: 300 !important;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus,
+textarea:focus {
+    border: 1px solid rgba(81, 203, 238, 1) !important;
+    box-shadow: 0 0 5px rgba(74, 151, 151, 1) !important;
+}
+
+textarea {
+    height: 150px !important;
 }
 
 span {
@@ -998,5 +1025,50 @@ button:hover {
 
     .banner-photo img {
         height: 100%;
+    }
+}
+
+/* =============================================================================
+   IPAD STYLING
+   ============================================================================= */
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .projects-intro-grid-container {
+        grid-template-columns: max-content max-content 1fr;
+        grid-template-areas:
+            "intro intro intro"
+            "list1 list2 . ";
+    }
+
+    .projects-intro-grid-container ul:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .projects-intro-grid-container ul:nth-child(2),
+    .projects-intro-grid-container ul:nth-child(3) {
+        margin-top: 80px;
+    }
+
+    .projects-container div.project-image-container:nth-child(3),
+    .projects-container div.project-image-container:nth-child(4) {
+        border-bottom: 100px solid transparent;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .wpforms-submit-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .review {
+        width: 90%;
+    }
+
+    .main-carousel::before {
+        left: -10vw;
+        top: -25%;
     }
 }
