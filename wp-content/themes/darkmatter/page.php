@@ -22,7 +22,7 @@ if (is_page('contact')) {
 <!-- PROJECT PAGE -->
 
 <?php
-if (is_page('projects')) {
+if (is_page('work')) {
 ?>
 <div class="projects-intro-grid-container">
     <ul>
@@ -227,7 +227,7 @@ if (is_page('about')) {
 <!-- FOOTER CTA FOR PROJECTS AND ABOUT PAGE -->
 
 <?php
-if (is_page(array('projects', 'about'))) {
+if (is_page(array('work', 'about'))) {
 ?>
 <section class="section-centered section-centered--extra-padding section-mobile-centered">
     <h1><?php the_field('footer_headline'); ?></h1>
