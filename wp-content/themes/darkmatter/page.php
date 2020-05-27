@@ -1,9 +1,15 @@
 <?php get_header();?>
 
+<?php
+if ( $post->post_parent == 0 ) {
+?>
 <div class="text-header-container">
     <h1><?php the_field('page_headline'); ?></h1>
     <h1 class="text-header-shadow rellax" data-rellax-speed="4"><?php the_field('page_headline'); ?></h1>
 </div>
+<?php
+}
+?>
 
 <?php
 if (is_page('contact')) {
@@ -164,7 +170,6 @@ if (is_page('work')) {
 <?php }
 ?>
 
-<!-- PROJECT PAGE -->
 <?php
 if (is_page('about')) {
 ?>
@@ -220,6 +225,116 @@ if (is_page('about')) {
         <p><?php the_field('description'); ?></p>
     </div>
 </section>
+<?php }
+?>
+
+<?php
+if ( $post->post_parent == '12' ) {
+?>
+<div class="text-header-container">
+    <h1><?php single_post_title(); ?></h1>
+    <h1 class="text-header-shadow rellax" data-rellax-speed="4"><?php single_post_title(); ?></h1>
+    <p class="project-brief"><?php the_field('project_brief'); ?></p>
+</div>
+
+<section>
+    <?php 
+        $banner_image = get_field('banner_image');
+    ?>
+    <div class="banner-photo">
+        <img src="<?php echo $banner_image['url'] ?>" alt="<?php echo $banner_image['alt'] ?>">
+    </div>
+</section>
+
+<section class="project-details-grid-container">
+    <div>
+        <h1>Client</h1>
+        <p><?php the_field('client'); ?></p>
+    </div>
+
+    <div>
+        <h1>Agency</h1>
+        <p><?php the_field('agency'); ?></p>
+    </div>
+
+    <div>
+        <h1>Year</h1>
+        <p><?php the_field('year'); ?></p>
+    </div>
+
+    <div>
+        <h1>Episodes</h1>
+        <p><?php the_field('episodes'); ?></p>
+    </div>
+
+    <div>
+        <h1>Production</h1>
+        <p><?php the_field('production'); ?></p>
+    </div>
+
+    <div>
+        <h1>Direction</h1>
+        <p><?php the_field('direction'); ?></p>
+    </div>
+
+    <div>
+        <h1>Camera direction</h1>
+        <p><?php the_field('camera_direction'); ?></p>
+    </div>
+
+    <div>
+        <h1>Camera</h1>
+        <p><?php the_field('camera'); ?></p>
+    </div>
+
+    <div>
+        <h1>Edit</h1>
+        <p><?php the_field('edit'); ?></p>
+    </div>
+
+</section>
+
+<section class="iframe-container">
+    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Q9uhiBZyYSc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="project-description">
+    <p><?php the_field('first_paragraph'); ?></p>
+    <br>
+    <p><?php the_field('second_paragraph'); ?></p>
+
+    <div class="two-column-photo-container">
+        <div class="project-photo">
+            <?php 
+                $image_1 = get_field('image_1');
+                $image_2 = get_field('image_2');
+            ?>
+            <img src="<?php echo $image_1['url'] ?>" alt="<?php echo $image_1['alt'] ?>">
+        </div>
+
+        <div class="project-photo">
+            <img src="<?php echo $image_2['url'] ?>" alt="<?php echo $image_2['alt'] ?>">
+        </div>
+    </div>
+
+    <p><?php the_field('third_paragraph'); ?></p>
+
+    <div class="two-column-photo-container">
+        <div class="project-photo">
+            <?php 
+                $image_3 = get_field('image_3');
+                $image_4 = get_field('image_4');
+            ?>
+            <img src="<?php echo $image_3['url'] ?>" alt="<?php echo $image_3['alt'] ?>">
+        </div>
+
+        <div class="project-photo">
+            <img src="<?php echo $image_4['url'] ?>" alt="<?php echo $image_4['alt'] ?>">
+        </div>
+    </div>
+
+</section>
+
 <?php }
 ?>
 
