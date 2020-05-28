@@ -85,6 +85,7 @@
                 <div class="logo-overlay">
                     <img src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
                 </div>
+                <div class="dark-overlay"></div>
             </a>
         </div>
 
@@ -104,6 +105,7 @@
                 <div class="logo-overlay">
                     <img src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
                 </div>
+                <div class="dark-overlay"></div>
             </a>
         </div>
 
