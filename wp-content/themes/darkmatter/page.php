@@ -241,55 +241,92 @@ if ( $post->post_parent == '12' ) {
     <p class="project-brief"><?php the_field('project_brief'); ?></p>
 </div>
 
-<section class="iframe-container">
-    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Q9uhiBZyYSc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<?php if( get_field('video_link') ): ?>
+<section>
+    <div class="iframe-container">
+        <iframe class="responsive-iframe" src="<?php the_field('video_link'); ?>?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </section>
+<?php endif; ?>
+
+
+<?php if( get_field('video_file') ): ?>
+<section>
+    <div class="video-container">
+        <video controls>
+            <source src="<?php 
+                    $vid = get_field('video_file'); 
+                    $url = $vid['url'];
+                    echo $url
+                ?>" type="video/mp4">
+        </video>
+    </div>
+</section>
+<?php endif; ?>
 
 <section class="project-details-grid-container">
+    <?php if( get_field('client') ): ?>
     <div>
         <h1>Client</h1>
         <p><?php the_field('client'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('agency') ): ?>
     <div>
         <h1>Agency</h1>
         <p><?php the_field('agency'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('year') ): ?>
     <div>
         <h1>Year</h1>
         <p><?php the_field('year'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('episodes') ): ?>
     <div>
         <h1>Episodes</h1>
         <p><?php the_field('episodes'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('production') ): ?>
     <div>
         <h1>Production</h1>
         <p><?php the_field('production'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('direction') ): ?>
     <div>
         <h1>Direction</h1>
         <p><?php the_field('direction'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('camera_direction') ): ?>
     <div>
         <h1>Camera direction</h1>
         <p><?php the_field('camera_direction'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('camera') ): ?>
     <div>
         <h1>Camera</h1>
         <p><?php the_field('camera'); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if( get_field('edit') ): ?>
     <div>
         <h1>Edit</h1>
         <p><?php the_field('edit'); ?></p>
     </div>
+    <?php endif; ?>
 
 </section>
 

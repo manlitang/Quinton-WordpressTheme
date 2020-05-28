@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     initRellax();
     openModal();
     closeModal();
+
+    document.querySelector('.nav-container').style.top = "0";
 });
 
 const navSlide = () => {
