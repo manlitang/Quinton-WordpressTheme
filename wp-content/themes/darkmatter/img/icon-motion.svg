@@ -2,14 +2,14 @@
   <g id="Group_63" data-name="Group 63" transform="translate(-1377.5 -1849.5)">
     <g id="Group_61" data-name="Group 61" transform="translate(682.279 -8255.457)">
       <g id="Group_60" data-name="Group 60">
-        <path id="Path_67" data-name="Path 67" d="M806.24,10133.21a27.759,27.759,0,1,1-27.765-27.753A27.755,27.755,0,0,1,806.24,10133.21Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_67" data-name="Path 67" d="M806.24,10133.21a27.759,27.759,0,1,1-27.765-27.753A27.755,27.755,0,0,1,806.24,10133.21Z" fill="none" stroke="#8C4A97" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
     <g id="Group_62" data-name="Group 62" transform="translate(375.198 -3781.542)">
-      <line id="Line_88" data-name="Line 88" x1="39.285" y2="0.076" transform="translate(1012.078 5677.258)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
-      <line id="Line_89" data-name="Line 89" x1="32.995" transform="translate(1002.802 5652.679)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
-      <line id="Line_90" data-name="Line 90" x1="33.831" transform="translate(1019.17 5640.382)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
-      <line id="Line_91" data-name="Line 91" x1="10.911" transform="translate(1022.993 5664.976)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_88" data-name="Line 88" x1="39.285" y2="0.076" transform="translate(1012.078 5677.258)" fill="none" stroke="#8C4A97" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_89" data-name="Line 89" x1="32.995" transform="translate(1002.802 5652.679)" fill="none" stroke="#8C4A97" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_90" data-name="Line 90" x1="33.831" transform="translate(1019.17 5640.382)" fill="none" stroke="#8C4A97" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_91" data-name="Line 91" x1="10.911" transform="translate(1022.993 5664.976)" fill="none" stroke="#8C4A97" stroke-linecap="round" stroke-width="1"/>
     </g>
   </g>
 </svg>
