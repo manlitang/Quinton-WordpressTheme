@@ -67,8 +67,7 @@ const closeModal = () => {
     
 const initVanillaTilt = () => {
     VanillaTilt.init(document.querySelector('.project-image-container'), {
-        max: 35,
-        speed: 400
+        max: 35
     }); 
 }
 

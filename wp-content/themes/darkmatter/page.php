@@ -77,7 +77,7 @@ if (is_page('work')) {
 
         ?>
 
-        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="100" data-tilt-reverse="true">
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project1['link']; ?>">
             <img src="<?php echo $img1['url'] ?>" alt="<?php $img1['alt'] ?>">
                 <div class="logo-overlay">
@@ -97,7 +97,7 @@ if (is_page('work')) {
 
         ?>
 
-        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="100" data-tilt-reverse="true">
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project2['link']; ?>">
             <img src="<?php echo $img2['url'] ?>" alt="<?php $img2['alt'] ?>">
                 <div class="logo-overlay">
@@ -117,7 +117,7 @@ if (is_page('work')) {
 
         ?>
 
-        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="100" data-tilt-reverse="true">
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project3['link']; ?>">
             <img src="<?php echo $img3['url'] ?>" alt="<?php $img3['alt'] ?>">
                 <div class="logo-overlay">
@@ -137,9 +137,9 @@ if (is_page('work')) {
 
         ?>
 
-        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="100" data-tilt-reverse="true">
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project4['link']; ?>">
-            <img src="<?php echo $img4['url'] ?>" alt="<?php $img4['alt'] ?>">
+            <img class="project-image-bg" src="<?php echo $img4['url'] ?>" alt="<?php $img4['alt'] ?>">
                 <div class="logo-overlay">
                     <img src="<?php echo $logo_img4['url'] ?>" alt="<?php echo $logo_img4['alt'] ?>">
                 </div>
@@ -151,24 +151,40 @@ if (is_page('work')) {
     </div>
 </section>
 
-<section class="client-container">
+<section class="client-container section-centered--extra-padding-2">
     <h1>Clients</h1>
     <div class="client-logo-container">
         <div class="client-logo">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/24k.png" alt="">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/ziggo.svg" alt="Ziggo">
         </div>
         <div class="client-logo">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/ziggo.png" alt="">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/slamtv.svg" alt="Slam!TV">
         </div>
         <div class="client-logo">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/unilever.png" alt="">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/mtv.svg" alt="MTV">
         </div>
         <div class="client-logo">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/slam.png" alt="">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/disney.svg" alt="Disney">
         </div>
         <div class="client-logo">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/opel.png" alt="">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/24kitchen.svg" alt="24Kitchen">
         </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/cola.svg" alt="Coca Cola">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/coop.svg" alt="Coop">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/unilever.svg" alt="Unilever">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/kilroy.svg" alt="Kilroy">
+        </div>
+        <div class="client-logo">
+            <img src="<?php bloginfo('template_url');?>/img/client-logos/bunq.svg" alt="Bunq">
+        </div>
+
     </div>
 </section>
 <?php }

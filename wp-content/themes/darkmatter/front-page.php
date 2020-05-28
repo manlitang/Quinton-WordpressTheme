@@ -79,7 +79,7 @@
 
         ?>
 
-        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="100" data-tilt-reverse="true">
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $featured1['featured_link1']; ?>">
             <img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
                 <div class="logo-overlay">
@@ -99,7 +99,7 @@
 
         ?>
 
-        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="200" data-tilt-reverse="true">
+        <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $featured2['featured_link2']; ?>">
             <img src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>">
                 <div class="logo-overlay">
