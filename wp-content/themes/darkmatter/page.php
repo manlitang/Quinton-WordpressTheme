@@ -237,13 +237,8 @@ if ( $post->post_parent == '12' ) {
     <p class="project-brief"><?php the_field('project_brief'); ?></p>
 </div>
 
-<section>
-    <?php 
-        $banner_image = get_field('banner_image');
-    ?>
-    <div class="banner-photo">
-        <img src="<?php echo $banner_image['url'] ?>" alt="<?php echo $banner_image['alt'] ?>">
-    </div>
+<section class="iframe-container">
+    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Q9uhiBZyYSc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section class="project-details-grid-container">
@@ -292,10 +287,6 @@ if ( $post->post_parent == '12' ) {
         <p><?php the_field('edit'); ?></p>
     </div>
 
-</section>
-
-<section class="iframe-container">
-    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Q9uhiBZyYSc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section class="project-description">
