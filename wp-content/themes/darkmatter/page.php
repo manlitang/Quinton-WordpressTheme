@@ -196,19 +196,19 @@ if (is_page('about')) {
 
 <div class="column-container"> 
     <div class="column">
-            <img src="<?php bloginfo('template_url');?>/img/usp-icons/a.svg" alt="video production">
+            <img src="<?php bloginfo('template_url');?>/img/usp-icons/team.svg" alt="video production">
             <h1><?php echo $usp1['usp_name'] ?></h1>
             <p><?php echo $usp1['usp_details'] ?></p>
         </div>
 
         <div class="column">
-            <img src="<?php bloginfo('template_url');?>/img/usp-icons/c.svg" alt="video production">
+            <img src="<?php bloginfo('template_url');?>/img/usp-icons/editor.svg" alt="video production">
             <h1><?php echo $usp2['usp_name'] ?></h1>
             <p><?php echo $usp2['usp_details'] ?></p>
         </div>
 
         <div class="column">
-            <img src="<?php bloginfo('template_url');?>/img/usp-icons/b.svg" alt="video production">
+            <img src="<?php bloginfo('template_url');?>/img/usp-icons/education.svg" alt="video production">
             <h1><?php echo $usp3['usp_name'] ?></h1>
             <p><?php echo $usp3['usp_details'] ?></p>
         </div>
@@ -376,7 +376,7 @@ if ( $post->post_parent == '12' ) {
 <?php
 if (is_page(array('work', 'about'))) {
 ?>
-<section class="section-centered section-centered--extra-padding section-mobile-centered">
+<section class="section-centered section-centered--extra-padding section-mobile-centered position-relative">
     <h1><?php the_field('footer_headline'); ?></h1>
     <h2><?php the_field('footer_subheadline'); ?></h2>
 

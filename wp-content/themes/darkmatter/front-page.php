@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <section class="hero-container">
-    <div class="video-container rellax" data-rellax-xs-speed="-3">
+    <div class="video-container rellax" data-rellax-xs-speed="-2">
         <video autoplay muted loop>
             <source src="<?php 
                     $bg_vid = get_field('hero_video'); 
@@ -224,7 +224,7 @@
     </div>
 </section>
 
-<section class="section-centered section-centered--extra-padding section-mobile-centered">
+<section class="section-centered section-centered--extra-padding section-mobile-centered position-relative">
     <h1><?php the_field('footer_headline'); ?></h1>
     <h2><?php the_field('footer_subheadline'); ?></h2>
 

@@ -42,13 +42,15 @@ main {
 section, footer {
     padding-top: 10%;
     padding-bottom: 10%;
-    position: relative;
 }
 
 h2, p {
     line-height: 1.5;
 }
 
+.position-relative {
+    position: relative;
+}
 /* =============================================================================
    HEADLINE STYLING
    ============================================================================= */
@@ -182,12 +184,23 @@ nav > .menu > .menu-item a:hover::before,
 
     .burger {
         display: block;
+        padding-right: 1em;
+    }
+
+    .logo {
+        padding-left: 1em;
+    }
+
+    nav {
+        height: 10vh;
+        width: 100vw;
     }
 
     .menu {
         position: absolute;
         right: 0px;
         top: 10vh;
+        bottom: 0px;
         height: 90vh;
         width: 100vw;
         background-color: #111;
@@ -195,7 +208,7 @@ nav > .menu > .menu-item a:hover::before,
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(110%);
+        transform: translateX(100%);
         transition: transform 0.5s ease-in;
         text-transform: uppercase;
     }
@@ -235,7 +248,7 @@ nav > .menu > .menu-item a:hover::before,
    ============================================================================= */
 
 .menu-active {
-    transform: translateX(10%);
+    transform: translateX(0%);
 }
 
 @keyframes menuLinkFade {
@@ -303,7 +316,7 @@ nav > .menu > .menu-item a:hover::before,
 
 @media screen and (max-width: 768px) and (min-height: 800px) {
     .hero-container video {
-        height: 70vh;
+        height: 60vh;
     }
 }
 
@@ -425,6 +438,10 @@ h2 {
     padding: 50px 0 0 0;
 }
 
+.column-container div:nth-child(1) h1 { color: #4A9797; }
+.column-container div:nth-child(2) h1 { color: #97974A; }
+.column-container div:nth-child(3) h1 { color: #8C4A97; }
+
 .column h1 {
     font-size: 22.28px;
     margin: 20px 0px 10px 0px;
@@ -510,11 +527,6 @@ h2 {
 
     background: #111111;
     opacity: 0.5;
-}
-
-.project-image-container a {
-    line-height: 0;
-    height: 0;
 }
 
 .logo-overlay img {
