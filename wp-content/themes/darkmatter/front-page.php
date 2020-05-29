@@ -23,7 +23,7 @@
 <div class="showreel-modal fade" id="showreel-modal">
     <span class="close-modal" id="close-modal">&times;</span>
     <div class="embed-container">
-        <iframe width="1174" height="660" src="https://www.youtube.com/embed/aJs7eHyKuec?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1174" height="660" data-src="https://www.youtube.com/embed/aJs7eHyKuec?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -39,19 +39,19 @@
         ?>
 
         <div class="column fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/icon-camera.svg" alt="video production">
+            <img data-src="<?php bloginfo('template_url');?>/img/icon-camera.svg" alt="video production">
             <h1><?php echo $service1['service_name1'] ?></h1>
             <p><?php echo $service1['service_details1'] ?></p>
         </div>
 
         <div class="column fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/icon-edit.svg" alt="video production">
+            <img data-src="<?php bloginfo('template_url');?>/img/icon-edit.svg" alt="video production">
             <h1><?php echo $service2['service_name2'] ?></h1>
             <p><?php echo $service2['service_details2'] ?></p>
         </div>
 
         <div class="column fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/icon-motion.svg" alt="video production">
+            <img data-src="<?php bloginfo('template_url');?>/img/icon-motion.svg" alt="video production">
             <h1><?php echo $service3['service_name3'] ?></h1>
             <p><?php echo $service3['service_details3'] ?></p>
         </div>
@@ -81,9 +81,9 @@
 
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $featured1['featured_link1']; ?>">
-            <img src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
+            <img data-src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
                 <div class="logo-overlay">
-                    <img src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
+                    <img data-src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
                 </div>
                 <div class="dark-overlay"></div>
             </a>
@@ -101,16 +101,20 @@
 
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $featured2['featured_link2']; ?>">
-            <img src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>">
+            <img data-src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>">
                 <div class="logo-overlay">
-                    <img src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
+                    <img data-src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
                 </div>
                 <div class="dark-overlay"></div>
             </a>
         </div>
 
         <div class="btn-container btn-container--padding-bottom">
-            <a href="#" class="btn">View projects</a>
+            <?php 
+                $button_featured = get_field('button_featured'); 
+            ?>
+
+            <a href="<?php echo $button_featured['button_featured_link']; ?>" class="btn"><?php echo $button_featured['button_featured_text']; ?></a>
         </div>
 
         <div class="bg-overlap"></div>
@@ -132,7 +136,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $testimonial_img1['url'] ?>" alt="<?php echo $testimonial_img1['alt'] ?>">
+                    <img data-src="<?php echo $testimonial_img1['url'] ?>" alt="<?php echo $testimonial_img1['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial1['testimonial_name1']; ?></p>
@@ -152,7 +156,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $testimonial_img2['url'] ?>" alt="<?php echo $testimonial_img2['alt'] ?>">
+                    <img data-src="<?php echo $testimonial_img2['url'] ?>" alt="<?php echo $testimonial_img2['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial2['testimonial_name2']; ?></p>
@@ -172,7 +176,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $testimonial_img3['url'] ?>" alt="<?php echo $testimonial_img3['alt'] ?>">
+                    <img data-src="<?php echo $testimonial_img3['url'] ?>" alt="<?php echo $testimonial_img3['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial3['testimonial_name3']; ?></p>
@@ -192,7 +196,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $testimonial_img4['url'] ?>" alt="<?php echo $testimonial_img4['alt'] ?>">
+                    <img data-src="<?php echo $testimonial_img4['url'] ?>" alt="<?php echo $testimonial_img4['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial4['testimonial_name4']; ?></p>
@@ -212,7 +216,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img src="<?php echo $testimonial_img5['url'] ?>" alt="<?php echo $testimonial_img5['alt'] ?>">
+                    <img data-src="<?php echo $testimonial_img5['url'] ?>" alt="<?php echo $testimonial_img5['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial5['testimonial_name5']; ?></p>

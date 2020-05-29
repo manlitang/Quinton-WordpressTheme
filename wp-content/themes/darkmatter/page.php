@@ -34,10 +34,10 @@ if (is_page('work')) {
     <ul class="fade-in">
         <p><?php the_field('page_text'); ?></p>
         <br>
-
+        <br>
         <div class="cta-container">
             <div class="down-arrow-icon">
-                <?php the_field('cta_icon'); ?>
+                <a href="#projects"><?php the_field('cta_icon'); ?></a>
             </div>
             <a href="#projects"><?php the_field('cta_text'); ?></a>
         </div>
@@ -51,8 +51,8 @@ if (is_page('work')) {
 
     <ul class="list-industries fade-in">
         <li>Entertainment</li>
+        <li>Food and Drinks</li>
         <li>Music</li>
-        <li>Food</li>
         <li>Corporate</li>
     </ul>
 </div>
@@ -79,9 +79,9 @@ if (is_page('work')) {
 
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project1['link']; ?>">
-            <img src="<?php echo $img1['url'] ?>" alt="<?php $img1['alt'] ?>">
+            <img data-src="<?php echo $img1['url'] ?>" alt="<?php $img1['alt'] ?>">
                 <div class="logo-overlay">
-                    <img src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
+                    <img data-src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
                 </div>
                 <div class="dark-overlay"></div>
             </a>
@@ -99,9 +99,9 @@ if (is_page('work')) {
 
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project2['link']; ?>">
-            <img src="<?php echo $img2['url'] ?>" alt="<?php $img2['alt'] ?>">
+            <img data-src="<?php echo $img2['url'] ?>" alt="<?php $img2['alt'] ?>">
                 <div class="logo-overlay">
-                    <img src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
+                    <img data-src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
                 </div>
                 <div class="dark-overlay"></div>
             </a>
@@ -119,9 +119,9 @@ if (is_page('work')) {
 
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project3['link']; ?>">
-            <img src="<?php echo $img3['url'] ?>" alt="<?php $img3['alt'] ?>">
+            <img data-src="<?php echo $img3['url'] ?>" alt="<?php $img3['alt'] ?>">
                 <div class="logo-overlay">
-                    <img src="<?php echo $logo_img3['url'] ?>" alt="<?php echo $logo_img3['alt'] ?>">
+                    <img data-src="<?php echo $logo_img3['url'] ?>" alt="<?php echo $logo_img3['alt'] ?>">
                 </div>
                 <div class="dark-overlay"></div>
             </a>
@@ -139,9 +139,9 @@ if (is_page('work')) {
 
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project4['link']; ?>">
-            <img class="project-image-bg" src="<?php echo $img4['url'] ?>" alt="<?php $img4['alt'] ?>">
+            <img class="project-image-bg" data-src="<?php echo $img4['url'] ?>" alt="<?php $img4['alt'] ?>">
                 <div class="logo-overlay">
-                    <img src="<?php echo $logo_img4['url'] ?>" alt="<?php echo $logo_img4['alt'] ?>">
+                    <img data-src="<?php echo $logo_img4['url'] ?>" alt="<?php echo $logo_img4['alt'] ?>">
                 </div>
                 <div class="dark-overlay"></div>
             </a>
@@ -155,34 +155,34 @@ if (is_page('work')) {
     <h1>Clients</h1>
     <div class="client-logo-container">
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/ziggo.svg" alt="Ziggo">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/ziggo.svg" alt="Ziggo">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/slamtv.svg" alt="Slam!TV">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/slamtv.svg" alt="Slam!TV">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/mtv.svg" alt="MTV">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/mtv.svg" alt="MTV">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/disney.svg" alt="Disney">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/disney.svg" alt="Disney">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/24kitchen.svg" alt="24Kitchen">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/24kitchen.svg" alt="24Kitchen">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/cola.svg" alt="Coca Cola">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/cola.svg" alt="Coca Cola">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/coop.svg" alt="Coop">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/coop.svg" alt="Coop">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/unilever.svg" alt="Unilever">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/unilever.svg" alt="Unilever">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/kilroy.svg" alt="Kilroy">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/kilroy.svg" alt="Kilroy">
         </div>
         <div class="client-logo fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/client-logos/bunq.svg" alt="Bunq">
+            <img data-src="<?php bloginfo('template_url');?>/img/client-logos/bunq.svg" alt="Bunq">
         </div>
 
     </div>
@@ -199,7 +199,7 @@ if (is_page('about')) {
 ?>
 <section>
     <div class="banner-photo fade-in">
-        <img src="<?php echo $banner_photo['url'] ?>" alt="<?php echo $banner_photo['alt'] ?>">
+        <img data-src="<?php echo $banner_photo['url'] ?>" alt="<?php echo $banner_photo['alt'] ?>">
     </div>
 </section>
 
@@ -212,19 +212,19 @@ if (is_page('about')) {
 
 <div class="column-container"> 
         <div class="column fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/usp-icons/team.svg" alt="video production">
+            <img data-src="<?php bloginfo('template_url');?>/img/usp-icons/team.svg" alt="video production">
             <h1><?php echo $usp1['usp_name'] ?></h1>
             <p><?php echo $usp1['usp_details'] ?></p>
         </div>
 
         <div class="column fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/usp-icons/editor.svg" alt="video production">
+            <img data-src="<?php bloginfo('template_url');?>/img/usp-icons/editor.svg" alt="video production">
             <h1><?php echo $usp2['usp_name'] ?></h1>
             <p><?php echo $usp2['usp_details'] ?></p>
         </div>
 
         <div class="column fade-in">
-            <img src="<?php bloginfo('template_url');?>/img/usp-icons/education.svg" alt="video production">
+            <img data-src="<?php bloginfo('template_url');?>/img/usp-icons/education.svg" alt="video production">
             <h1><?php echo $usp3['usp_name'] ?></h1>
             <p><?php echo $usp3['usp_details'] ?></p>
         </div>
@@ -236,7 +236,7 @@ if (is_page('about')) {
             $profile_photo = get_field('profile_photo');
         ?>
 
-        <img src="<?php echo $profile_photo['url'] ?>" alt="<?php echo $profile_photo['alt'] ?>">
+        <img data-src="<?php echo $profile_photo['url'] ?>" alt="<?php echo $profile_photo['alt'] ?>">
     </div>
 
     <div class="profile-description fade-in">
@@ -261,7 +261,7 @@ if ( $post->post_parent == '12' ) {
 <?php if( get_field('video_link') ): ?>
 <section class="fade-in">
     <div class="iframe-container">
-        <iframe class="responsive-iframe" src="<?php the_field('video_link'); ?>?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" data-src="<?php the_field('video_link'); ?>?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </section>
 <?php endif; ?>
@@ -358,11 +358,11 @@ if ( $post->post_parent == '12' ) {
                 $image_1 = get_field('image_1');
                 $image_2 = get_field('image_2');
             ?>
-            <img src="<?php echo $image_1['url'] ?>" alt="<?php echo $image_1['alt'] ?>">
+            <img data-src="<?php echo $image_1['url'] ?>" alt="<?php echo $image_1['alt'] ?>">
         </div>
 
         <div class="project-photo fade-in">
-            <img src="<?php echo $image_2['url'] ?>" alt="<?php echo $image_2['alt'] ?>">
+            <img data-src="<?php echo $image_2['url'] ?>" alt="<?php echo $image_2['alt'] ?>">
         </div>
     </div>
 
@@ -374,13 +374,29 @@ if ( $post->post_parent == '12' ) {
                 $image_3 = get_field('image_3');
                 $image_4 = get_field('image_4');
             ?>
-            <img src="<?php echo $image_3['url'] ?>" alt="<?php echo $image_3['alt'] ?>">
+            <img data-src="<?php echo $image_3['url'] ?>" alt="<?php echo $image_3['alt'] ?>">
         </div>
 
         <div class="project-photo fade-in">
-            <img src="<?php echo $image_4['url'] ?>" alt="<?php echo $image_4['alt'] ?>">
+            <img data-src="<?php echo $image_4['url'] ?>" alt="<?php echo $image_4['alt'] ?>">
         </div>
     </div>
+
+    <?php if( get_field('image_5') ): ?>
+    <div class="two-column-photo-container two-column-photo-container--less-padding">
+        <div class="project-photo fade-in">
+            <?php 
+                $image_5 = get_field('image_5');
+                $image_6 = get_field('image_6');
+            ?>
+            <img data-src="<?php echo $image_5['url'] ?>" alt="<?php echo $image_5['alt'] ?>">
+        </div>
+
+        <div class="project-photo fade-in">
+            <img data-src="<?php echo $image_6['url'] ?>" alt="<?php echo $image_6['alt'] ?>">
+        </div>
+    </div>
+    <?php endif; ?>
 
 </section>
 
