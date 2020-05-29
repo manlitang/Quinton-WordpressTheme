@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="37.801" viewBox="0 0 36 37.801">
-  <g id="Group_7" data-name="Group 7" transform="translate(-749.092 -2554.201)">
-    <path id="Path_26" data-name="Path 26" d="M773.09,2573.105a7.649,7.649,0,1,0,3.852-14.258,8.187,8.187,0,0,0-2.744.442,7.808,7.808,0,0,0-7.092-4.588,7.655,7.655,0,0,0-7.1,4.6,8.323,8.323,0,0,0-2.77-.456,7.648,7.648,0,1,0,3.852,14.258" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-    <path id="Path_27" data-name="Path 27" d="M781.789,2591.052v14.563H762.132v-14.563" transform="translate(-4.868 -14.113)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
-    <line id="Line_41" data-name="Line 41" x2="19.414" transform="translate(757.385 2586.514)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
-    <g id="Group_6" data-name="Group 6" transform="translate(762.869 2576.939)">
-      <line id="Line_42" data-name="Line 42" y1="9.515" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
-      <line id="Line_43" data-name="Line 43" y1="9.515" transform="translate(4.223)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
-      <line id="Line_44" data-name="Line 44" y1="9.515" transform="translate(8.445)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="30.996" height="32.539" viewBox="0 0 30.996 32.539">
+  <g id="Group_99" data-name="Group 99" transform="translate(-749.092 -2554.201)">
+    <path id="Path_26" data-name="Path 26" d="M769.73,2570.474a6.556,6.556,0,1,0,3.3-12.219,7.015,7.015,0,0,0-2.352.379,6.691,6.691,0,0,0-6.078-3.933,6.561,6.561,0,0,0-6.081,3.944,7.131,7.131,0,0,0-2.374-.391,6.555,6.555,0,1,0,3.3,12.219" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_27" data-name="Path 27" d="M778.978,2591.052v12.48H762.132v-12.48" transform="translate(-5.965 -17.293)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_41" data-name="Line 41" x2="16.638" transform="translate(756.271 2581.965)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    <g id="Group_6" data-name="Group 6" transform="translate(760.971 2573.76)">
+      <line id="Line_42" data-name="Line 42" y1="8.154" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_43" data-name="Line 43" y1="8.154" transform="translate(3.619)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_44" data-name="Line 44" y1="8.154" transform="translate(7.238)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
     </g>
   </g>
 </svg>

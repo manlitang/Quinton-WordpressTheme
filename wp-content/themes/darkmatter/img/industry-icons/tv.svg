@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="29.567" viewBox="0 0 36 29.567">
-  <g id="Group_20" data-name="Group 20" transform="translate(-108.111 -3099.698)">
-    <line id="Line_67" data-name="Line 67" x2="18.46" transform="translate(116.881 3128.765)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-    <g id="Group_18" data-name="Group 18" transform="translate(122.906 3122.88)">
-      <line id="Line_68" data-name="Line 68" y2="5.726" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-      <line id="Line_69" data-name="Line 69" y2="5.726" transform="translate(6.412)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="30.996" height="25.482" viewBox="0 0 30.996 25.482">
+  <g id="Group_102" data-name="Group 102" transform="translate(-108.111 -3099.698)">
+    <line id="Line_67" data-name="Line 67" x2="12.2" transform="translate(117.509 3124.681)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <g id="Group_18" data-name="Group 18" transform="translate(121.491 3120.791)">
+      <line id="Line_68" data-name="Line 68" y2="3.784" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line id="Line_69" data-name="Line 69" y2="3.784" transform="translate(4.238)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
     </g>
-    <rect id="Rectangle_55" data-name="Rectangle 55" width="35" height="22.47" rx="5" transform="translate(108.611 3100.198)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="29.996" height="20.453" rx="5" transform="translate(108.611 3100.198)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
   </g>
 </svg>

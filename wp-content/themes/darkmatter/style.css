@@ -942,8 +942,7 @@ footer, footer h1, footer h2 {
 }
 
 .list-channels li::before, .list-industries li::before {
-    margin-right: 10px;
-    transform: scale(.8);
+    margin-right: 20px;
 }
 
 .list-channels li:nth-child(1)::before { content: url('img/industry-icons/youtube.svg'); }

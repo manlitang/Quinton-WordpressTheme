@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="26.833" viewBox="0 0 36 26.833">
-  <g id="Group_29" data-name="Group 29" transform="translate(-991.143 -4114.401)">
-    <line id="Line_71" data-name="Line 71" x2="29.567" transform="translate(994.359 4122.239)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
-    <g id="Group_21" data-name="Group 21" transform="translate(1005.301 4126.05)">
-      <path id="Path_39" data-name="Path 39" d="M1016.785,4135.809l9.074,5.251-9.074,5.246Z" transform="translate(-1016.785 -4135.809)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="30.996" height="23.139" viewBox="0 0 30.996 23.139">
+  <g id="Group_103" data-name="Group 103" transform="translate(-991.143 -4114.401)">
+    <line id="Line_71" data-name="Line 71" x2="25.605" transform="translate(993.838 4121.19)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <g id="Group_21" data-name="Group 21" transform="translate(1003.581 4124.829)">
+      <path id="Path_39" data-name="Path 39" d="M1016.785,4135.809l7.333,4.243-7.333,4.24Z" transform="translate(-1016.785 -4135.809)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
     </g>
-    <g id="Group_28" data-name="Group 28" transform="translate(996.09 4118.523)">
+    <g id="Group_28" data-name="Group 28" transform="translate(995.237 4117.828)">
       <g id="Group_23" data-name="Group 23" transform="translate(0 0)">
         <g id="Group_22" data-name="Group 22">
-          <path id="Path_40" data-name="Path 40" d="M1000.127,4121.525a.458.458,0,1,1-.458-.459A.458.458,0,0,1,1000.127,4121.525Z" transform="translate(-999.211 -4121.066)" fill="#475257" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="Path_40" data-name="Path 40" d="M999.951,4121.437a.37.37,0,1,1-.37-.372A.369.369,0,0,1,999.951,4121.437Z" transform="translate(-999.211 -4121.065)" fill="#475257" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
         </g>
       </g>
-      <g id="Group_25" data-name="Group 25" transform="translate(4.132 0)">
+      <g id="Group_25" data-name="Group 25" transform="translate(3.339 0)">
         <g id="Group_24" data-name="Group 24">
-          <path id="Path_41" data-name="Path 41" d="M1007.159,4121.525a.457.457,0,1,1-.457-.459A.457.457,0,0,1,1007.159,4121.525Z" transform="translate(-1006.244 -4121.066)" fill="#475257" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="Path_41" data-name="Path 41" d="M1006.983,4121.437a.37.37,0,1,1-.37-.372A.368.368,0,0,1,1006.983,4121.437Z" transform="translate(-1006.244 -4121.065)" fill="#475257" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
         </g>
       </g>
-      <g id="Group_27" data-name="Group 27" transform="translate(8.265 0)">
+      <g id="Group_27" data-name="Group 27" transform="translate(6.679 0)">
         <g id="Group_26" data-name="Group 26">
-          <path id="Path_42" data-name="Path 42" d="M1014.192,4121.525a.457.457,0,1,1-.456-.459A.456.456,0,0,1,1014.192,4121.525Z" transform="translate(-1013.277 -4121.066)" fill="#475257" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="Path_42" data-name="Path 42" d="M1014.016,4121.437a.37.37,0,1,1-.369-.372A.368.368,0,0,1,1014.016,4121.437Z" transform="translate(-1013.277 -4121.065)" fill="#475257" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
         </g>
       </g>
     </g>
-    <path id="Path_43" data-name="Path 43" d="M991.643,4117.117a2.222,2.222,0,0,1,2.216-2.216h30.568a2.223,2.223,0,0,1,2.216,2.216v21.4a2.223,2.223,0,0,1-2.216,2.217H993.859a2.223,2.223,0,0,1-2.216-2.217Z" transform="translate(0)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_43" data-name="Path 43" d="M991.643,4116.8a1.905,1.905,0,0,1,1.9-1.9h26.2a1.906,1.906,0,0,1,1.9,1.9v18.339a1.9,1.9,0,0,1-1.9,1.9h-26.2a1.9,1.9,0,0,1-1.9-1.9Z" transform="translate(0)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
   </g>
 </svg>
