@@ -20,7 +20,7 @@
     </div>
 </section>
 
-<div class="showreel-modal" id="showreel-modal">
+<div class="showreel-modal fade" id="showreel-modal">
     <span class="close-modal" id="close-modal">&times;</span>
     <div class="embed-container">
         <iframe width="1174" height="660" src="https://www.youtube.com/embed/aJs7eHyKuec?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

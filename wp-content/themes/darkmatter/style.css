@@ -390,7 +390,6 @@ nav > .menu > .menu-item a:hover::before,
     height: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,0.9);
-    transition: 0.7s;
 }
 
 .embed-container {
@@ -1247,18 +1246,37 @@ video:focus {
    SCROLL ANIMATIONS
    ============================================================================= */
 
-.fade-in, .fade-in-left {
+.fade, .fade-in, .fade-in-left {
     opacity: 0;
 }
 
-.fade-in.appear, .fade-in-left.appear {
+.fade, .fade-in.appear, .fade-in-left.appear {
 	animation-duration: 0.6s;
 	animation-fill-mode: forwards;
 	opacity: 1;
 }
 
+.fade.appear { animation-name: fade; }
 .fade-in.appear { animation-name: fadeInUp; }
 .fade-in-left.appear { animation-name: fadeInLeft; }
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+
+@keyframes fade {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
 
 @-webkit-keyframes fadeInUp {
     0% {

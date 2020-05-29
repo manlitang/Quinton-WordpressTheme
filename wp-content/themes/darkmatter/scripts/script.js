@@ -54,6 +54,7 @@ const openModal = () => {
     var play = document.getElementById('hero__text-cta');
     play.onclick = function(){
     modal.style.display = 'block';
+    modal.classList.add('appear');
     }
 }
 
