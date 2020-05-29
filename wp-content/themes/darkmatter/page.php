@@ -3,7 +3,7 @@
 <?php
 if ( $post->post_parent == 0 ) {
 ?>
-<div class="text-header-container">
+<div class="text-header-container fade-in">
     <h1><?php the_field('page_headline'); ?></h1>
     <h1 class="text-header-shadow rellax" data-rellax-speed="4"><?php the_field('page_headline'); ?></h1>
 </div>
@@ -14,9 +14,9 @@ if ( $post->post_parent == 0 ) {
 <?php
 if (is_page('contact')) {
 ?>
-<p><?php the_field('page_text'); ?></p>
+<p class="fade-in"><?php the_field('page_text'); ?></p>
 
-<section>
+<section class="fade-in">
 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
     <?php the_content(); ?>
 <?php endwhile; endif; ?>
@@ -31,7 +31,7 @@ if (is_page('contact')) {
 if (is_page('work')) {
 ?>
 <div class="projects-intro-grid-container">
-    <ul>
+    <ul class="fade-in">
         <p><?php the_field('page_text'); ?></p>
         <br>
 
@@ -43,13 +43,13 @@ if (is_page('work')) {
         </div>
     </ul>
 
-    <ul class="list-channels">
+    <ul class="list-channels fade-in">
         <li>YouTube</li>
         <li>Television</li>
         <li>Socials</li>
     </ul>
 
-    <ul class="list-industries">
+    <ul class="list-industries fade-in">
         <li>Entertainment</li>
         <li>Music</li>
         <li>Food</li>
@@ -65,7 +65,7 @@ if (is_page('work')) {
         $project4 = get_field('project4');
     ?>
 
-    <div class="projects-container">
+    <div class="projects-container fade-in">
 
         <?php 
             $project1 = get_field('project1');
@@ -154,34 +154,34 @@ if (is_page('work')) {
 <section class="client-container section-centered--extra-padding-2">
     <h1>Clients</h1>
     <div class="client-logo-container">
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/ziggo.svg" alt="Ziggo">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/slamtv.svg" alt="Slam!TV">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/mtv.svg" alt="MTV">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/disney.svg" alt="Disney">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/24kitchen.svg" alt="24Kitchen">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/cola.svg" alt="Coca Cola">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/coop.svg" alt="Coop">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/unilever.svg" alt="Unilever">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/kilroy.svg" alt="Kilroy">
         </div>
-        <div class="client-logo">
+        <div class="client-logo fade-in">
             <img src="<?php bloginfo('template_url');?>/img/client-logos/bunq.svg" alt="Bunq">
         </div>
 
@@ -198,7 +198,7 @@ if (is_page('about')) {
     $banner_photo = get_field('banner_photo');
 ?>
 <section>
-    <div class="banner-photo">
+    <div class="banner-photo fade-in">
         <img src="<?php echo $banner_photo['url'] ?>" alt="<?php echo $banner_photo['alt'] ?>">
     </div>
 </section>
@@ -211,28 +211,27 @@ if (is_page('about')) {
 ?>
 
 <div class="column-container"> 
-    <div class="column">
+        <div class="column fade-in">
             <img src="<?php bloginfo('template_url');?>/img/usp-icons/team.svg" alt="video production">
             <h1><?php echo $usp1['usp_name'] ?></h1>
             <p><?php echo $usp1['usp_details'] ?></p>
         </div>
 
-        <div class="column">
+        <div class="column fade-in">
             <img src="<?php bloginfo('template_url');?>/img/usp-icons/editor.svg" alt="video production">
             <h1><?php echo $usp2['usp_name'] ?></h1>
             <p><?php echo $usp2['usp_details'] ?></p>
         </div>
 
-        <div class="column">
+        <div class="column fade-in">
             <img src="<?php bloginfo('template_url');?>/img/usp-icons/education.svg" alt="video production">
             <h1><?php echo $usp3['usp_name'] ?></h1>
             <p><?php echo $usp3['usp_details'] ?></p>
         </div>
-    </div>
 </div>
 
 <section class="profile-container section-centered--extra-padding">
-    <div class="profile-photo">
+    <div class="profile-photo fade-in">
         <?php 
             $profile_photo = get_field('profile_photo');
         ?>
@@ -240,7 +239,7 @@ if (is_page('about')) {
         <img src="<?php echo $profile_photo['url'] ?>" alt="<?php echo $profile_photo['alt'] ?>">
     </div>
 
-    <div class="profile-description">
+    <div class="profile-description fade-in">
         <h1><?php the_field('headline'); ?></h1>
         <p><?php the_field('description'); ?></p>
     </div>
@@ -252,13 +251,15 @@ if (is_page('about')) {
 if ( $post->post_parent == '12' ) {
 ?>
 <div class="text-header-container">
-    <h1><?php single_post_title(); ?></h1>
-    <h1 class="text-header-shadow rellax" data-rellax-speed="4"><?php single_post_title(); ?></h1>
-    <p class="project-brief"><?php the_field('project_brief'); ?></p>
+    <div class="fade-in">
+        <h1><?php single_post_title(); ?></h1>
+        <h1 class="text-header-shadow rellax" data-rellax-speed="4"><?php single_post_title(); ?></h1>
+    </div>
+    <p class="project-brief fade-in"><?php the_field('project_brief'); ?></p>
 </div>
 
 <?php if( get_field('video_link') ): ?>
-<section>
+<section class="fade-in">
     <div class="iframe-container">
         <iframe class="responsive-iframe" src="<?php the_field('video_link'); ?>?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -267,8 +268,8 @@ if ( $post->post_parent == '12' ) {
 
 
 <?php if( get_field('video_file') ): ?>
-<section>
-    <div class="video-container">
+<section">
+    <div class="video-container fade-in">
         <video controls>
             <source src="<?php 
                     $vid = get_field('video_file'); 
@@ -282,63 +283,63 @@ if ( $post->post_parent == '12' ) {
 
 <section class="project-details-grid-container">
     <?php if( get_field('client') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Client</h1>
         <p><?php the_field('client'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('agency') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Agency</h1>
         <p><?php the_field('agency'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('year') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Year</h1>
         <p><?php the_field('year'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('episodes') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Episodes</h1>
         <p><?php the_field('episodes'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('production') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Production</h1>
         <p><?php the_field('production'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('direction') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Direction</h1>
         <p><?php the_field('direction'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('camera_direction') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Camera direction</h1>
         <p><?php the_field('camera_direction'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('camera') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Camera</h1>
         <p><?php the_field('camera'); ?></p>
     </div>
     <?php endif; ?>
 
     <?php if( get_field('edit') ): ?>
-    <div>
+    <div class="fade-in">
         <h1>Edit</h1>
         <p><?php the_field('edit'); ?></p>
     </div>
@@ -347,12 +348,12 @@ if ( $post->post_parent == '12' ) {
 </section>
 
 <section class="project-description">
-    <p><?php the_field('first_paragraph'); ?></p>
+    <p class="fade-in"><?php the_field('first_paragraph'); ?></p>
     <br>
-    <p><?php the_field('second_paragraph'); ?></p>
+    <p class="fade-in"><?php the_field('second_paragraph'); ?></p>
 
     <div class="two-column-photo-container">
-        <div class="project-photo">
+        <div class="project-photo fade-in">
             <?php 
                 $image_1 = get_field('image_1');
                 $image_2 = get_field('image_2');
@@ -360,7 +361,7 @@ if ( $post->post_parent == '12' ) {
             <img src="<?php echo $image_1['url'] ?>" alt="<?php echo $image_1['alt'] ?>">
         </div>
 
-        <div class="project-photo">
+        <div class="project-photo fade-in">
             <img src="<?php echo $image_2['url'] ?>" alt="<?php echo $image_2['alt'] ?>">
         </div>
     </div>
@@ -368,7 +369,7 @@ if ( $post->post_parent == '12' ) {
     <p><?php the_field('third_paragraph'); ?></p>
 
     <div class="two-column-photo-container">
-        <div class="project-photo">
+        <div class="project-photo fade-in">
             <?php 
                 $image_3 = get_field('image_3');
                 $image_4 = get_field('image_4');
@@ -376,7 +377,7 @@ if ( $post->post_parent == '12' ) {
             <img src="<?php echo $image_3['url'] ?>" alt="<?php echo $image_3['alt'] ?>">
         </div>
 
-        <div class="project-photo">
+        <div class="project-photo fade-in">
             <img src="<?php echo $image_4['url'] ?>" alt="<?php echo $image_4['alt'] ?>">
         </div>
     </div>
@@ -393,10 +394,10 @@ if ( $post->post_parent == '12' ) {
 if (is_page(array('work', 'about'))) {
 ?>
 <section class="section-centered section-centered--extra-padding section-mobile-centered position-relative">
-    <h1><?php the_field('footer_headline'); ?></h1>
-    <h2><?php the_field('footer_subheadline'); ?></h2>
+    <h1 class="fade-in"><?php the_field('footer_headline'); ?></h1>
+    <h2 class="fade-in"><?php the_field('footer_subheadline'); ?></h2>
 
-    <div class="one-btn-container">
+    <div class="one-btn-container fade-in">
         <div class="btn-container">
 
             <?php 

@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <section class="hero-container">
-    <div class="video-container rellax" data-rellax-xs-speed="-2">
+    <div class="video-container rellax fade-in" data-rellax-xs-speed="-2">
         <video autoplay muted loop>
             <source src="<?php 
                     $bg_vid = get_field('hero_video'); 
@@ -10,7 +10,7 @@
                 ?>" type="video/mp4">
         </video>
     </div>
-    <div class="hero__text rellax" data-rellax-speed="-2" data-rellax-xs-speed="0">
+    <div class="hero__text rellax fade-in-left" data-rellax-speed="-2" data-rellax-xs-speed="0">
         <h1><?php the_field('hero_headline'); ?></h1>
 
         <div class="hero__text-cta" id="hero__text-cta">
@@ -27,9 +27,9 @@
     </div>
 </div>
 
-<section class="section-centered" data-aos="fade-up">
-    <h1><?php the_field('services_headline'); ?></h1>
-    <h2><?php the_field('services_subheadline'); ?></h2>
+<section class="section-centered">
+    <h1 class="fade-in"><?php the_field('services_headline'); ?></h1>
+    <h2 class="fade-in"><?php the_field('services_subheadline'); ?></h2>
     <div class="column-container"> 
 
         <?php 
@@ -38,19 +38,19 @@
         $service3 = get_field('service_3');
         ?>
 
-        <div class="column">
+        <div class="column fade-in">
             <img src="<?php bloginfo('template_url');?>/img/icon-camera.svg" alt="video production">
             <h1><?php echo $service1['service_name1'] ?></h1>
             <p><?php echo $service1['service_details1'] ?></p>
         </div>
 
-        <div class="column">
+        <div class="column fade-in">
             <img src="<?php bloginfo('template_url');?>/img/icon-edit.svg" alt="video production">
             <h1><?php echo $service2['service_name2'] ?></h1>
             <p><?php echo $service2['service_details2'] ?></p>
         </div>
 
-        <div class="column">
+        <div class="column fade-in">
             <img src="<?php bloginfo('template_url');?>/img/icon-motion.svg" alt="video production">
             <h1><?php echo $service3['service_name3'] ?></h1>
             <p><?php echo $service3['service_details3'] ?></p>
@@ -59,15 +59,15 @@
 </section>
 
 <section class="section-centered section-centered--no-padding-bottom">
-    <h1><?php the_field('featured_headline'); ?></h1>
-    <h2><?php the_field('featured_subheadline'); ?></h2>
+    <h1 class="fade-in"><?php the_field('featured_headline'); ?></h1>
+    <h2 class="fade-in"><?php the_field('featured_subheadline'); ?></h2>
 
     <?php 
         $featured1 = get_field('featured_project1');
         $featured2 = get_field('featured_project2');
     ?>
 
-    <div class="projects-container">
+    <div class="projects-container fade-in">
 
         <?php 
             $featured1 = get_field('featured_project1'); 
@@ -118,9 +118,9 @@
 </section>
 
 <section class="section-centered section-centered--extra-padding">
-    <h1><?php the_field('testimonials_headline'); ?></h1>
-    <h2><?php the_field('testimonials_subheadline'); ?></h2>
-    <div class="main-carousel" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": false }'>
+    <h1 class="fade-in"><?php the_field('testimonials_headline'); ?></h1>
+    <h2 class="fade-in"><?php the_field('testimonials_subheadline'); ?></h2>
+    <div class="main-carousel fade-in" data-flickity='{ "cellAlign": "center", "pageDots": true, "prevNextButtons": false, "autoPlay": false }'>
         <?php 
             $testimonial1 = get_field('testimonial1'); 
             $testimonial_img1 = $testimonial1['testimonial_image1'];
@@ -225,10 +225,10 @@
 </section>
 
 <section class="section-centered section-centered--extra-padding section-mobile-centered position-relative">
-    <h1><?php the_field('footer_headline'); ?></h1>
-    <h2><?php the_field('footer_subheadline'); ?></h2>
+    <h1 class="fade-in"><?php the_field('footer_headline'); ?></h1>
+    <h2 class="fade-in"><?php the_field('footer_subheadline'); ?></h2>
 
-    <div class="two-btns-container">
+    <div class="two-btns-container fade-in">
 
         <?php 
             $button1 = get_field('button1'); 

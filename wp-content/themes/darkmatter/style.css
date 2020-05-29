@@ -141,7 +141,7 @@ nav {
 
 nav > .menu > .menu-item a::before, 
 .hero__text-cta p::before,
-.cta-container a::before {
+.cta-container a::before  {
     content: "";
     position: absolute;
     width: 100%;
@@ -158,7 +158,22 @@ nav > .menu > .menu-item a:hover::before,
 .hero__text-cta p:hover::before,
 .cta-container a:hover::before {
 	visibility: visible;
-	transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media only screen and (min-width: 768px) {
+    nav > .menu > .current-menu-item a::after  {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -5px;
+        left: 0;
+        background: #fff;
+        transition: all .3s ease-in-out 0s;
+        visibility: visible;
+        transform: scaleX(1);
+    }
 }
 
 /* =============================================================================
@@ -375,6 +390,7 @@ nav > .menu > .menu-item a:hover::before,
     height: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,0.9);
+    transition: 0.7s;
 }
 
 .embed-container {
@@ -815,6 +831,10 @@ footer, footer h1, footer h2 {
     font-size: 17.83px;
 }
 
+.footer-content > .menu a:hover {
+    opacity: 0.3;
+}
+
 @media screen and (max-width: 768px) {
     footer {
         padding-left: 0;
@@ -1221,4 +1241,71 @@ button:hover {
 
 video:focus {
     outline: none;
+}
+
+/* =============================================================================
+   SCROLL ANIMATIONS
+   ============================================================================= */
+
+.fade-in, .fade-in-left {
+    opacity: 0;
+}
+
+.fade-in.appear, .fade-in-left.appear {
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+	opacity: 1;
+}
+
+.fade-in.appear { animation-name: fadeInUp; }
+.fade-in-left.appear { animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInUp {
+    0% {
+		opacity: 0;
+		transform: translate3d(0, 3%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 3%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-3%, 0, 0);
+      transform: translate3d(-3%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-3%, 0, 0);
+      transform: translate3d(-3%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
 }
