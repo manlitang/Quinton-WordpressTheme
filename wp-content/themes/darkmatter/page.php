@@ -33,14 +33,6 @@ if (is_page('work')) {
 <div class="projects-intro-grid-container">
     <ul class="fade-in">
         <p><?php the_field('page_text'); ?></p>
-        <br>
-        <br>
-        <div class="cta-container">
-            <div class="down-arrow-icon">
-                <a href="#projects"><?php the_field('cta_icon'); ?></a>
-            </div>
-            <a href="#projects"><?php the_field('cta_text'); ?></a>
-        </div>
     </ul>
 
     <ul class="list-channels fade-in">
@@ -54,6 +46,15 @@ if (is_page('work')) {
         <li>Food and Drinks</li>
         <li>Music</li>
         <li>Corporate</li>
+    </ul>
+    
+    <ul>
+        <div class="cta-container">
+            <div class="down-arrow-icon">
+                <a href="#projects"><?php the_field('cta_icon'); ?></a>
+            </div>
+            <a href="#projects"><?php the_field('cta_text'); ?></a>
+        </div>
     </ul>
 </div>
 

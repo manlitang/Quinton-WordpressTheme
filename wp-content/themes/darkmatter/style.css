@@ -44,6 +44,10 @@ section, footer {
     padding-bottom: 10%;
 }
 
+h2 {
+    font-size: 22.28px;
+}
+
 h2, p {
     line-height: 1.5;
 }
@@ -75,6 +79,11 @@ a {
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    p, h2, .cta-container a, .projects-intro-grid-container, .btn-container a {
+        font-size: 16px;
+    }
+}
 /* =============================================================================
    NAVIGATION STYLING
    ============================================================================= */
@@ -445,7 +454,6 @@ nav > .menu > .menu-item a:hover::before,
 }
 
 h2 {
-    font-size: 22.28px;
     font-weight: 300;
 }
 
@@ -811,7 +819,7 @@ footer {
     max-width: 400px;
 }
 
-footer, footer h1, footer h2 {
+footer, footer h1 {
     font-size: 22.28px;
 }
 
@@ -844,8 +852,8 @@ footer, footer h1, footer h2 {
         width: calc(100vw - 2em);
     }
 
-    .footer-content p, .footer-content .menu {
-        font-size: 17.83px;
+    .footer-content p, .footer-content .menu, .copyright {
+        font-size: 16px;
     }
 
     .footer-content .menu {
@@ -906,21 +914,44 @@ footer, footer h1, footer h2 {
     list-style: none;
 }
 
-.list-channels {
+.list-channels, .cta-container {
     margin-top: 50px;
 }
+
+.list-channels li, .list-industries li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.list-channels li::before, .list-industries li::before {
+    margin-right: 10px;
+    transform: scale(0.7);
+}
+
+.list-channels li:nth-child(1)::before { content: url('img/industry-icons/youtube.svg'); }
+.list-channels li:nth-child(2)::before { content: url('img/industry-icons/tv.svg'); }
+.list-channels li:nth-child(3)::before { content: url('img/industry-icons/socials.svg'); }
+
+.list-industries li:nth-child(1)::before { content: url('img/industry-icons/entertainment.svg'); }
+.list-industries li:nth-child(2)::before { content: url('img/industry-icons/food.svg'); }
+.list-industries li:nth-child(3)::before { content: url('img/industry-icons/music.svg'); }
+.list-industries li:nth-child(4)::before { content: url('img/industry-icons/corporate.svg'); }
+
 
 @media only screen and (min-width: 768px) {
     .projects-intro-grid-container {
         display: grid;
         grid-template-columns: 2.5fr max-content max-content;
         grid-template-areas:
-            "intro list1 list2";
+            "intro list1 list2"
+            "cta list1 list2";
     }
 
     .projects-intro-grid-container ul:nth-child(1) { grid-area: intro }
     .projects-intro-grid-container ul:nth-child(2) { grid-area: list1 }
     .projects-intro-grid-container ul:nth-child(3) { grid-area: list2 }
+    .projects-intro-grid-container ul:nth-child(4) { grid-area: cta }
 
     .projects-intro-grid-container ul:nth-child(1) {
         margin-right: 150px;
@@ -933,26 +964,12 @@ footer, footer h1, footer h2 {
     .list-channels {
         margin-top: 0px;
     }
+
+    .list-channels li::before, .list-industries li::before {
+        margin-right: 20px;
+        transform: scale(1);
+    }
 }
-
-.list-channels li, .list-industries li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.list-channels li::before, .list-industries li::before {
-    margin-right: 20px;
-}
-
-.list-channels li:nth-child(1)::before { content: url('img/industry-icons/youtube.svg'); }
-.list-channels li:nth-child(2)::before { content: url('img/industry-icons/tv.svg'); }
-.list-channels li:nth-child(3)::before { content: url('img/industry-icons/socials.svg'); }
-
-.list-industries li:nth-child(1)::before { content: url('img/industry-icons/entertainment.svg'); }
-.list-industries li:nth-child(2)::before { content: url('img/industry-icons/food.svg'); }
-.list-industries li:nth-child(3)::before { content: url('img/industry-icons/music.svg'); }
-.list-industries li:nth-child(4)::before { content: url('img/industry-icons/corporate.svg'); }
 
 /* =============================================================================
    CLIENT SECTION STYLING
@@ -1116,7 +1133,8 @@ button:hover {
         grid-template-columns: max-content max-content 1fr;
         grid-template-areas:
             "intro intro intro"
-            "list1 list2 . ";
+            "list1 list2 ."
+            "cta . .";
     }
 
     .projects-intro-grid-container ul:nth-child(1) {
@@ -1149,6 +1167,15 @@ button:hover {
     .main-carousel::before {
         left: -10vw;
         top: -25%;
+    }
+
+    .client-logo-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px 30px;
+    }
+
+    .section-centered--extra-padding-2 {
+        padding: 20% 0;
     }
 }
 

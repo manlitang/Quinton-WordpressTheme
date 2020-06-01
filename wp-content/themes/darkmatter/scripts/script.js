@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     lazyLoad();
-    intersectionObserve();
+    intersectionObserveDesktop();
+    intersectionObserveMobile();
     navSlide();
     initVanillaTilt();
     initRellax();
@@ -65,9 +66,19 @@ const openModal = () => {
 const closeModal = () => {
     var modal = document.getElementById('showreel-modal');
     var span = document.getElementById('close-modal');
+    var embedContainer = document.querySelector('.embed-container');
 
     span.onclick = function() { 
-    modal.style.display = 'none';
+        modal.style.display = 'none';
+            var iframe = embedContainer.querySelector('iframe');
+            var video = embedContainer.querySelector('video');
+            if (iframe) {
+                var iframeSrc = iframe.src;
+                iframe.src = iframeSrc;
+            }
+            if (video) {
+                video.pause();
+            }
     }
 }
     
@@ -88,10 +99,41 @@ const initRellax = () => {
     });
 }
 
-const intersectionObserve = () => {
+const intersectionObserveDesktop = () => {
+    if (window.innerWidth >= 768) {
+        const appearOptions = {
+            threshold: 0,
+            rootMargin: "0px 0px -250px 0px"
+        };
+
+        const faders = document.querySelectorAll ('.fade-in');
+        const fadersLeft = document.querySelectorAll ('.fade-in-left');
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+
+        fadersLeft.forEach(faderLeft => {
+            appearOnScroll.observe(faderLeft);
+        });
+    }
+}
+
+const intersectionObserveMobile = () => {
     const appearOptions = {
         threshold: 0,
-        rootMargin: "0px 0px -250px 0px"
+        rootMargin: "0px 0px -100px 0px"
     };
 
     const faders = document.querySelectorAll ('.fade-in');
@@ -116,6 +158,8 @@ const intersectionObserve = () => {
         appearOnScroll.observe(faderLeft);
     });
 }
+
+
 
 const lazyLoad = () => {
     const images = document.querySelectorAll('[data-src]');
