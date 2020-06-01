@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="<?php bloginfo('description');?>">
+    <meta name="keywords" content="videographer, video production, video production service, video production company, videograaf, video editor, youtube editor, freelance video editor, freelance editor, freelance cameraman">
+    <meta name="author" content="Quinton Dallie">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name');?></title>
     <?php wp_head();?>
