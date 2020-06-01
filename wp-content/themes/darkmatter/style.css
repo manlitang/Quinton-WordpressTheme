@@ -497,7 +497,7 @@ h2 {
 }
 
 .column-container {
-    margin-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .column-container div:nth-child(1) h1 { color: #4A9797; }
@@ -542,7 +542,7 @@ h2 {
 
 .projects-container {
     position: relative;
-    margin-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .bg-overlap {
@@ -702,7 +702,7 @@ h2 {
 .main-carousel {
     width: 100%;
     margin: 0 auto;
-    margin-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1920 - 300)));
     position: relative;
 }
 
@@ -918,8 +918,8 @@ footer, footer h1 {
    ============================================================================= */
 
 .text-header-container {
-    margin-top: calc(100px + (250 - 100) * ((100vw - 300px) / (1600 - 300)));
-    margin-bottom: calc(50px + (100 - 100) * ((50vw - 300px) / (1600 - 300)));
+    margin-top: calc(100px + (250 - 100) * ((100vw - 300px) / (1920 - 300)));
+    margin-bottom: calc(50px + (100 - 100) * ((50vw - 300px) / (1920 - 300)));
     position: relative;
 }
 
@@ -927,7 +927,7 @@ footer, footer h1 {
     opacity: 0.1;
     position: relative;
     margin-top: -70px;
-    font-size: calc(68px + (106.28 - 68) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(68px + (106.28 - 68) * ((100vw - 300px) / (1920 - 300)));
     user-select: none;
 }
 
@@ -1239,11 +1239,11 @@ button:hover {
 }
 
 .project-description p {
-    margin-right: calc(0px + (450 - 0) * ((100vw - 300px) / (1600 - 300)));
+    margin-right: calc(0px + (450 - 0) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .contact-text {
-    margin-right: calc(0px + (400 - 0) * ((100vw - 300px) / (1600 - 300)));
+    margin-right: calc(0px + (400 - 0) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .project-photo {
