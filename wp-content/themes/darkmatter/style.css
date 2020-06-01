@@ -62,6 +62,7 @@ h2, p {
 h1 {
     text-transform: uppercase;
     font-weight: 900;
+    letter-spacing: 1px;
 }
 
 section h1 {
@@ -321,7 +322,7 @@ nav > .menu > .menu-item a:hover::before,
 }
 
 .hero__text {
-    margin-top: -50px;
+    margin-top: -30px;
     position: absolute;
     z-index: 2;
 }
@@ -332,15 +333,53 @@ nav > .menu > .menu-item a:hover::before,
     object-position: 70% 10%;
 }
 
+.hero-scroll-container {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-scroll-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.hero-scroll-text:hover {
+    letter-spacing: 2px;
+}
+
+.hero-scroll-line {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(-90deg);
+    margin-top: 50px;
+}
+
+.hero-scroll-height {
+    margin-top: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-scroll-height {
+        padding-top: 20%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hero-container video {
-        height: 50vh;
+        height: 45vh;
     }
 }
 
 @media screen and (max-width: 768px) and (min-height: 800px) {
     .hero-container video {
-        height: 60vh;
+        height: 55vh;
     }
 }
 
@@ -1203,6 +1242,10 @@ button:hover {
     margin-right: calc(0px + (450 - 0) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.contact-text {
+    margin-right: calc(0px + (400 - 0) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .project-photo {
     width: 48%;
 }
@@ -1217,6 +1260,10 @@ button:hover {
     justify-content: space-between;
     padding-top: 10%;
     padding-bottom: 10%;
+}
+
+.two-column-photo-container + .two-column-photo-container {
+    padding-top: 10%;
 }
 
 .two-column-photo-container--less-padding {

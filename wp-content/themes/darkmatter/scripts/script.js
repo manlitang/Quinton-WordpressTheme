@@ -70,15 +70,17 @@ const closeModal = () => {
 
     span.onclick = function() { 
         modal.style.display = 'none';
-            var iframe = embedContainer.querySelector('iframe');
-            var video = embedContainer.querySelector('video');
-            if (iframe) {
-                var iframeSrc = iframe.src;
-                iframe.src = iframeSrc;
-            }
-            if (video) {
-                video.pause();
-            }
+
+        var iframe = embedContainer.querySelector('iframe');
+        var video = embedContainer.querySelector('video');
+            
+        if (iframe) {
+            var iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+        if (video) {
+            video.pause();
+        }
     }
 }
     

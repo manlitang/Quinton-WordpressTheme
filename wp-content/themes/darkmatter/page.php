@@ -14,7 +14,7 @@ if ( $post->post_parent == 0 ) {
 <?php
 if (is_page('contact')) {
 ?>
-<p class="fade-in"><?php the_field('page_text'); ?></p>
+<p class="fade-in contact-text"><?php the_field('page_text'); ?></p>
 
 <section class="fade-in">
 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
@@ -47,7 +47,7 @@ if (is_page('work')) {
         <li>Music</li>
         <li>Corporate</li>
     </ul>
-    
+
     <ul>
         <div class="cta-container">
             <div class="down-arrow-icon">

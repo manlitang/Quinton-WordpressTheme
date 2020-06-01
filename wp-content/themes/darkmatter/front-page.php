@@ -18,6 +18,11 @@
             <p><?php the_field('hero_cta'); ?></p>
         </div>
     </div>
+
+    <div class="hero-scroll-container">
+        <div class="hero-scroll-text"><a href="#scrolled"> Scroll</a></div>
+        <div class="hero-scroll-line"></div>
+    </div>
 </section>
 
 <div class="showreel-modal fade" id="showreel-modal">
@@ -27,7 +32,7 @@
     </div>
 </div>
 
-<section class="section-centered">
+<section class="section-centered hero-scroll-height" id="scrolled">
     <h1 class="fade-in"><?php the_field('services_headline'); ?></h1>
     <h2 class="fade-in"><?php the_field('services_subheadline'); ?></h2>
     <div class="column-container"> 
