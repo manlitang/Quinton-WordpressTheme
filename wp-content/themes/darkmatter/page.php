@@ -21,11 +21,8 @@ if (is_page('contact')) {
     <?php the_content(); ?>
 <?php endwhile; endif; ?>
 </section>
-
 <?php }
 ?>
-
-<!-- PROJECT PAGE -->
 
 <?php
 if (is_page('work')) {
@@ -403,9 +400,6 @@ if ( $post->post_parent == '12' ) {
 
 <?php }
 ?>
-
-
-<!-- FOOTER CTA FOR PROJECTS AND ABOUT PAGE -->
 
 <?php
 if (is_page(array('work', 'about'))) {
