@@ -78,10 +78,10 @@ if (is_page('work')) {
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project1['link']; ?>">
             <img data-src="<?php echo $img1['url'] ?>" alt="<?php $img1['alt'] ?>">
+                <div class="dark-overlay"></div>
                 <div class="logo-overlay">
                     <img data-src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
                 </div>
-                <div class="dark-overlay"></div>
             </a>
         </div>
 
@@ -98,10 +98,10 @@ if (is_page('work')) {
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project2['link']; ?>">
             <img data-src="<?php echo $img2['url'] ?>" alt="<?php $img2['alt'] ?>">
+                <div class="dark-overlay"></div>
                 <div class="logo-overlay">
                     <img data-src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
                 </div>
-                <div class="dark-overlay"></div>
             </a>
         </div>
 
@@ -118,10 +118,10 @@ if (is_page('work')) {
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project3['link']; ?>">
             <img data-src="<?php echo $img3['url'] ?>" alt="<?php $img3['alt'] ?>">
+                <div class="dark-overlay"></div>
                 <div class="logo-overlay">
                     <img data-src="<?php echo $logo_img3['url'] ?>" alt="<?php echo $logo_img3['alt'] ?>">
                 </div>
-                <div class="dark-overlay"></div>
             </a>
         </div>
 
@@ -138,10 +138,10 @@ if (is_page('work')) {
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $project4['link']; ?>">
             <img class="project-image-bg" data-src="<?php echo $img4['url'] ?>" alt="<?php $img4['alt'] ?>">
+            <div class="dark-overlay"></div>
                 <div class="logo-overlay">
                     <img data-src="<?php echo $logo_img4['url'] ?>" alt="<?php echo $logo_img4['alt'] ?>">
                 </div>
-                <div class="dark-overlay"></div>
             </a>
         </div>
 

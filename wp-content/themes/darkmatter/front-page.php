@@ -87,10 +87,10 @@
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $featured1['featured_link1']; ?>">
             <img data-src="<?php echo $url1 ?>" alt="<?php echo $alt1 ?>">
+                <div class="dark-overlay"></div>
                 <div class="logo-overlay">
                     <img data-src="<?php echo $logo_img1['url'] ?>" alt="<?php echo $logo_img1['alt'] ?>">
                 </div>
-                <div class="dark-overlay"></div>
             </a>
         </div>
 
@@ -107,11 +107,11 @@
         <div class="project-image-container" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-perspective="8000" data-tilt-speed="1000" data-tilt-reverse="true">
             <a href="<?php echo $featured2['featured_link2']; ?>">
             <img data-src="<?php echo $url2 ?>" alt="<?php echo $alt2 ?>">
+                <div class="dark-overlay"></div>
                 <div class="logo-overlay">
                     <img data-src="<?php echo $logo_img2['url'] ?>" alt="<?php echo $logo_img2['alt'] ?>">
                 </div>
-                <div class="dark-overlay"></div>
-            </a>
+                </a>
         </div>
 
         <div class="btn-container btn-container--padding-bottom">
@@ -141,7 +141,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img data-src="<?php echo $testimonial_img1['url'] ?>" alt="<?php echo $testimonial_img1['alt'] ?>">
+                    <img src="<?php echo $testimonial_img1['url'] ?>" alt="<?php echo $testimonial_img1['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial1['testimonial_name1']; ?></p>
@@ -161,7 +161,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img data-src="<?php echo $testimonial_img2['url'] ?>" alt="<?php echo $testimonial_img2['alt'] ?>">
+                    <img src="<?php echo $testimonial_img2['url'] ?>" alt="<?php echo $testimonial_img2['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial2['testimonial_name2']; ?></p>
@@ -181,7 +181,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img data-src="<?php echo $testimonial_img3['url'] ?>" alt="<?php echo $testimonial_img3['alt'] ?>">
+                    <img src="<?php echo $testimonial_img3['url'] ?>" alt="<?php echo $testimonial_img3['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial3['testimonial_name3']; ?></p>
@@ -201,7 +201,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img data-src="<?php echo $testimonial_img4['url'] ?>" alt="<?php echo $testimonial_img4['alt'] ?>">
+                    <img src="<?php echo $testimonial_img4['url'] ?>" alt="<?php echo $testimonial_img4['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial4['testimonial_name4']; ?></p>
@@ -221,7 +221,7 @@
             </div>
             <div class="review-profile-container">
                 <div class="review-profile-pic">
-                    <img data-src="<?php echo $testimonial_img5['url'] ?>" alt="<?php echo $testimonial_img5['alt'] ?>">
+                    <img src="<?php echo $testimonial_img5['url'] ?>" alt="<?php echo $testimonial_img5['alt'] ?>">
                 </div>
                 <div class="review-profile-details">
                     <p><?php echo $testimonial5['testimonial_name5']; ?></p>
