@@ -23,6 +23,7 @@ const navSlide = () => {
 
         // toggle nav
         nav.classList.toggle('menu-active');
+        document.querySelector('body').classList.toggle('position-fixed');
 
         // animate links
         menuLinks.forEach((link, index) => {
